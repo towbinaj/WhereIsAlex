@@ -1,6 +1,7 @@
 <svg width="513" height="120" viewBox="0 0 513 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Where's Alex">
   <defs>
-    <linearGradient id="brandGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+    <!-- True 42° gradient axis (user-space vector spanning the pin) -->
+    <linearGradient id="brandGradient" gradientUnits="userSpaceOnUse" x1="-3" y1="12" x2="87" y2="94">
       <stop offset="0%" stop-color="#D54070"/>
       <stop offset="16.6%" stop-color="#8F4469"/>
       <stop offset="33.2%" stop-color="#CA5699"/>
