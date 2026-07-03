@@ -12,11 +12,11 @@
     </linearGradient>
   </defs>
 
-  <!-- Pin logomark (gradient) -->
+  <!-- Pin logomark (gradient) — center cut out (transparent) via even-odd rule -->
   <g transform="translate(6,8)">
-    <path d="M42 2 C22 2 6 18 6 38 C6 66 42 104 42 104 C42 104 78 66 78 38 C78 18 62 2 42 2 Z"
-          fill="url(#brandGradient)"/>
-    <circle cx="42" cy="38" r="15" fill="#FBFBF9"/>
+    <path fill-rule="evenodd" fill="url(#brandGradient)"
+          d="M42 2 C22 2 6 18 6 38 C6 66 42 104 42 104 C42 104 78 66 78 38 C78 18 62 2 42 2 Z
+             M57 38 A15 15 0 1 0 27 38 A15 15 0 1 0 57 38 Z"/>
   </g>
 
   <!-- Wordmark (solid SPARK sky-blue) -->

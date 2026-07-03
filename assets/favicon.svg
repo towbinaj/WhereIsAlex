@@ -11,7 +11,8 @@
       <stop offset="100%" stop-color="#9AC449"/>
     </linearGradient>
   </defs>
-  <path d="M32 4 C17 4 5 16 5 31 C5 52 32 60 32 60 C32 60 59 52 59 31 C59 16 47 4 32 4 Z"
-        fill="url(#pinGradient)"/>
-  <circle cx="32" cy="30" r="11" fill="#FBFBF9"/>
+  <!-- Center cut out (transparent) via even-odd rule -->
+  <path fill-rule="evenodd" fill="url(#pinGradient)"
+        d="M32 4 C17 4 5 16 5 31 C5 52 32 60 32 60 C32 60 59 52 59 31 C59 16 47 4 32 4 Z
+           M43 30 A11 11 0 1 0 21 30 A11 11 0 1 0 43 30 Z"/>
 </svg>
