@@ -1,0 +1,53 @@
+name: Refresh schedule
+
+# Rebuilds schedule.json from the QGenda (and any future) calendar feeds and
+# commits it back — but only when the schedule actually changed, so the history
+# isn't spammed with timestamp-only commits.
+
+on:
+  schedule:
+    - cron: "0 * * * *" # top of every hour (UTC)
+  workflow_dispatch: {}  # manual "Run workflow" button in the Actions tab
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-schedule
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Rebuild schedule.json and commit only on data change
+        run: |
+          set -euo pipefail
+          # Hash the schedule (ignoring the _generatedAt timestamp) before…
+          before=$(jq -Sc '.days' schedule.json | sha256sum | cut -d' ' -f1)
+
+          node scripts/build-schedule.js
+
+          # …and after the rebuild.
+          after=$(jq -Sc '.days' schedule.json | sha256sum | cut -d' ' -f1)
+
+          if [ "$before" = "$after" ]; then
+            echo "No schedule changes — discarding timestamp-only update."
+            git checkout -- schedule.json
+            exit 0
+          fi
+
+          echo "Schedule changed — committing refreshed schedule.json."
+          git config user.name  "whereisalex-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add schedule.json
+          git commit -m "chore: refresh schedule.json [skip ci]"
+          git push

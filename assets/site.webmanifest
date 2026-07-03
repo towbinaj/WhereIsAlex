@@ -1,0 +1,10 @@
+{
+  "name": "Where Is Alex",
+  "short_name": "Where Is Alex",
+  "icons": [
+    { "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ],
+  "theme_color": "#14110C",
+  "background_color": "#14110C",
+  "display": "standalone"
+}

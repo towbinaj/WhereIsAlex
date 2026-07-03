@@ -1,0 +1,999 @@
+{
+  "_generatedAt": "2026-07-03T19:32:59.203Z",
+  "person": "Alex",
+  "displayTimeZone": "America/New_York",
+  "calendars": [
+    {
+      "id": "qgenda",
+      "label": "Work · QGenda",
+      "color": "#D54070",
+      "color2": "#CA5699"
+    }
+  ],
+  "days": [
+    {
+      "date": "2026-06-29",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-06-29",
+          "title": "Trunk 2 (M-F)",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1000",
+          "endTime": "1800",
+          "uid": "ede79cad-9223-4d6f-8a0b-16316077fcb5"
+        }
+      ]
+    },
+    {
+      "date": "2026-06-30",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-06-30",
+          "title": "JEOPARDY",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "ae92f8d0-33e7-4040-9ecf-c0a86dd19ff1"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-06-30",
+          "title": "OFFICE",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "797066be-c12e-4814-8117-760fb387f85f"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-06-30",
+          "title": "US",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "0745",
+          "endTime": "1700",
+          "uid": "faa7742a-290c-44c8-b750-24744c51613b"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-06-30",
+          "title": "Solid Tumor Board",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1200",
+          "endTime": "1300",
+          "uid": "0d3945af-e425-4ceb-9a72-dcd861259c09"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-01",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-07-01",
+          "title": "RESOURCE Person",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "0700",
+          "endTime": "1500",
+          "uid": "a9e07698-95ad-4ccd-8a80-d4a3d1ea6cff"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-02",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-07-02",
+          "title": "OFFICE",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "2d5896d4-d33f-46c4-838b-374fe886ef18"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-03",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-07-03",
+          "title": "Observed Holiday",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "11b71739-f471-4eaf-b9ec-54086d6aa767"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-07-03",
+          "title": "Tuberous Sclerosis Conf",
+          "location": "",
+          "notes": "holiday",
+          "allDay": false,
+          "startTime": "1400",
+          "endTime": "1500",
+          "uid": "50a6b13b-44ed-4d8d-9210-08cb520bd16a"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-06",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-07-06",
+          "title": "US",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "0745",
+          "endTime": "1700",
+          "uid": "bebd6257-10ed-41d3-8e39-45b50f051c86"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-07",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-07-07",
+          "title": "OFFICE",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "95c5847c-d066-4da4-92ed-136c1cbd5a97"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-07-07",
+          "title": "Solid Tumor Board",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1200",
+          "endTime": "1300",
+          "uid": "be7c2a09-a1ff-444f-8434-69c4ce15132c"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-08",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-07-08",
+          "title": "JEOPARDY",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "3a0a69f9-4c13-4d8b-a89e-d143902bbfd9"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-07-08",
+          "title": "OFFICE",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "946f185b-0f63-484e-bcf7-1d0687e4d7b4"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-07-08",
+          "title": "Fluoro",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "0730",
+          "endTime": "1700",
+          "uid": "a9c19e3e-b7f5-44fb-ae56-85edc3381dbf"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-09",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-07-09",
+          "title": "OFFICE",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "01445f39-d849-4d95-8190-0c0ead918fc1"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-07-10",
+          "title": "Liberty",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "0745",
+          "endTime": "1700",
+          "uid": "6ed8996b-3db9-4f91-a707-cdafb1415ebf"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-13",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-07-13",
+          "title": "Trunk 1 (M-F)",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "0700",
+          "endTime": "1500",
+          "uid": "4c5827e1-ef1c-49d3-90a8-118de32dc5d1"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-07-14",
+          "title": "Trunk 2 (M-F)",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1000",
+          "endTime": "1800",
+          "uid": "98cacb4c-2d24-4b55-b56b-538ba2fbffef"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-07-14",
+          "title": "Solid Tumor Board",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1200",
+          "endTime": "1300",
+          "uid": "ce937071-11cd-4afd-b994-5d533ad4f32e"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-15",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-07-15",
+          "title": "VACATION",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "8dc07677-b53c-4621-93c2-ee26c24d7446"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-16",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-07-16",
+          "title": "VACATION",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "bc293cc7-0ae1-4f3e-a3d2-7a5d413059bf"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-17",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-07-17",
+          "title": "VACATION",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "4b5c3fe4-0ddd-4582-8f8f-249b9790cc66"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-20",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-07-20",
+          "title": "Fluoro",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "0730",
+          "endTime": "1700",
+          "uid": "1586c8b4-be65-481b-921e-26a05b4822e8"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-21",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-07-21",
+          "title": "OFFICE",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "71b2802e-9620-463f-ba66-c4ef7500cfb4"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-07-21",
+          "title": "Solid Tumor Board",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1200",
+          "endTime": "1300",
+          "uid": "ec35a238-34a5-473d-ac8b-585759990cdc"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-22",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-07-22",
+          "title": "OFFICE",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "348d7bb2-ef5e-40ee-b249-d446ee2ba63b"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-23",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-07-23",
+          "title": "OFFICE",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "435decb7-79d0-4d0f-a73b-da4e649db15f"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-24",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-07-24",
+          "title": "MEETING",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "0730",
+          "endTime": "1700",
+          "uid": "d2cb0852-9bbe-4c02-b9f9-db96ac18fc57"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-27",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-07-27",
+          "title": "RESOURCE Person",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "0700",
+          "endTime": "1500",
+          "uid": "34435fac-f6b3-434d-849a-0c4623d7a1aa"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-28",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-07-28",
+          "title": "OFFICE",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "08f2cef5-3033-4c5d-889e-5156f2290f89"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-07-28",
+          "title": "Solid Tumor Board",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1200",
+          "endTime": "1300",
+          "uid": "d9feb5b6-eafb-436a-add1-8cfd94e8cfa0"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-29",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-07-29",
+          "title": "MEETING",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "0730",
+          "endTime": "1700",
+          "uid": "8522229d-352f-467e-951a-9d613faade3a"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-30",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-07-30",
+          "title": "MEETING",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "0730",
+          "endTime": "1700",
+          "uid": "9aa0fd42-c66c-4999-b426-4f3251b3f52d"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-31",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-07-31",
+          "title": "Trunk 1 (M-F)",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "0700",
+          "endTime": "1500",
+          "uid": "630ea662-028b-47fb-93fb-f507915c3cf5"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-03",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-08-03",
+          "title": "VACATION",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "06573d39-0caf-4c93-afe4-e3c35172dbe3"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-04",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-08-04",
+          "title": "VACATION",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "cf755c2a-ffe2-44e5-886a-9cca5b14f645"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-08-04",
+          "title": "Solid Tumor Board",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1200",
+          "endTime": "1300",
+          "uid": "a08339c0-5523-4899-9a16-ea18ff0867dc"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-05",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-08-05",
+          "title": "VACATION",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "08cc552f-12f9-4f72-9d03-dd295a83c7ac"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-06",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-08-06",
+          "title": "VACATION",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "32257e34-e43c-43e2-83c3-97a51f29c999"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-07",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-08-07",
+          "title": "VACATION",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "c63a4367-12a4-443d-bcef-86ce631057e5"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-10",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-08-10",
+          "title": "Eve 1",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1500",
+          "endTime": "2200",
+          "uid": "e5d2d028-7d96-4e42-b46b-4e08fee2eaf8"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-11",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-08-11",
+          "title": "Solid Tumor Board",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1200",
+          "endTime": "1300",
+          "uid": "2994819a-9f12-408d-8d75-ad8c63dc6e94"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-17",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-08-17",
+          "title": "MEETING",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "0730",
+          "endTime": "1700",
+          "uid": "48e337a9-8595-4d11-ab37-9566b0dcb644"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-18",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-08-18",
+          "title": "MEETING",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "0730",
+          "endTime": "1700",
+          "uid": "901475dd-a57d-4196-afb4-b78b83d90590"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-08-18",
+          "title": "Solid Tumor Board",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1200",
+          "endTime": "1300",
+          "uid": "1ae23b95-5352-4716-97ea-e207faf9b2b2"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-19",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-08-19",
+          "title": "MEETING",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "0730",
+          "endTime": "1700",
+          "uid": "e36491ca-c508-4fb7-8b68-f9d44453ce55"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-20",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-08-20",
+          "title": "MEETING",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "0730",
+          "endTime": "1700",
+          "uid": "7d0cec16-4b80-496f-a99c-4ff238697abb"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-21",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-08-21",
+          "title": "MEETING",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "0730",
+          "endTime": "1700",
+          "uid": "37f4c505-b1d1-41c2-8587-fae88a023449"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-24",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-08-24",
+          "title": "Eve 3",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1600",
+          "endTime": "2300",
+          "uid": "d6ae9d8a-3308-4973-87e0-53c0e8aab526"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-08-24",
+          "title": "Overnight Beeper",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "2200",
+          "endTime": "0700",
+          "uid": "d76f1c74-a251-4d6e-b39a-0993b214a9ba"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-25",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-08-25",
+          "title": "Solid Tumor Board",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1200",
+          "endTime": "1300",
+          "uid": "afe544ca-f402-4dbe-8b9c-95290101f306"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-08-25",
+          "title": "Eve 3",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1600",
+          "endTime": "2300",
+          "uid": "432f3e22-dba7-4eb7-ba4e-73a4ae07ec54"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-08-25",
+          "title": "Overnight Beeper",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "2200",
+          "endTime": "0700",
+          "uid": "61dc69ff-4bfb-4798-b5db-3a70895908b4"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-26",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-08-26",
+          "title": "Eve 3",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1600",
+          "endTime": "2300",
+          "uid": "4347e1cf-6b9c-4d63-9de0-7cbcf5c0cab7"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-08-26",
+          "title": "Overnight Beeper",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "2200",
+          "endTime": "0700",
+          "uid": "482be9a3-cdc2-4ac0-9485-8618076a3829"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-27",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-08-27",
+          "title": "Eve 3",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1600",
+          "endTime": "2300",
+          "uid": "8cf450d0-b042-4f56-ac53-64046fff6c90"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-08-27",
+          "title": "Overnight Beeper",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "2200",
+          "endTime": "0700",
+          "uid": "519dea9c-1d10-4acd-9cc1-65cbe9304e54"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-28",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-08-28",
+          "title": "Eve 3",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1600",
+          "endTime": "2300",
+          "uid": "c3b91fe7-9f71-4b4e-96e4-27a5535fe7a8"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-08-28",
+          "title": "Overnight Beeper",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "2200",
+          "endTime": "0700",
+          "uid": "279496ee-6189-453b-9272-859758d0bbac"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-01",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-09-01",
+          "title": "Solid Tumor Board",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1200",
+          "endTime": "1300",
+          "uid": "932ea7c0-26da-4f63-87aa-ae822d15d647"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-05",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-09-05",
+          "title": "Holiday Late",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "6f13f37b-dc9c-4d26-851b-16406234688d"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-09-05",
+          "title": "OPL WE/HOL Beeper",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "0830",
+          "endTime": "1430",
+          "uid": "4096ef0c-1fe1-4621-8cd3-0fb2928fc176"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-09-05",
+          "title": "Weekend/Holiday LATE",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1430",
+          "endTime": "2200",
+          "uid": "9103cebc-35b3-4c2a-ada4-0a7ec587d545"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-09-05",
+          "title": "Overnight Beeper",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "2200",
+          "endTime": null,
+          "uid": "4445bae0-8edd-4341-b569-11ae1afbab89"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-06",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-09-06",
+          "title": "Holiday Late",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "2e144ae1-07a5-4c95-8ff1-b4333d40ef1d"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-09-06",
+          "title": "OPL WE/HOL Beeper",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "0830",
+          "endTime": "1430",
+          "uid": "3ed8831b-89df-48a7-8d6e-449f1cec08a5"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-09-06",
+          "title": "Weekend/Holiday LATE",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1430",
+          "endTime": "2200",
+          "uid": "3f8b5bf7-4b45-4c02-9c33-728781fa63fa"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-09-06",
+          "title": "Overnight Beeper",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "2200",
+          "endTime": null,
+          "uid": "5407cb03-2443-4dba-a78c-f9ec8dde1949"
+        }
+      ]
+    }
+  ]
+}

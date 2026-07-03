@@ -1,0 +1,70 @@
+# Where Is Alex
+
+A small, fast page that answers one question: **where is Alex right now, and where will Alex be next.** It reads Alex's QGenda work schedule (an iCalendar feed) and shows today's assignment front-and-center, with the days ahead below. Designed as a sibling to the SPARK calendar — same paper/ink theme, IBM Plex + JetBrains Mono type, gradient brand accents.
+
+## How it works
+
+```
+QGenda share link ──► scripts/build-schedule.js ──► schedule.json ──► index.html + app.js
+                      (scrape keys + call API)        (committed)        (static page)
+```
+
+- **`scripts/build-schedule.js`** loads each configured calendar and writes `schedule.json`. It supports two source types:
+  - **`qgenda-quicklink`** — the QGenda shared *Link/view* page. The script loads that public page (which embeds the company key, internal link key, and an antiforgery token), then calls QGenda's quicklink API to pull the whole department schedule and keeps only Alex's entries. **No login, no stored secrets** — everything it needs is scraped from the share page on each run, so it keeps working even if QGenda rotates the internal keys.
+  - **`ics`** — a standard iCalendar feed (a hand-rolled RFC 5545 parser, UTC→Eastern conversion). Handy for adding a personal calendar later.
+- **`schedule.json`** is committed so the page loads instantly. A GitHub Action rebuilds it hourly.
+- **`index.html` / `styles.css` / `app.js`** are a static site — the "Today" hero plus the upcoming day list. No build step, no framework.
+
+> The original QGenda **iCal** link (`…/ical?key=…`) is dead — it returns an empty/404 response even in a browser, so it was replaced by the share-link pipeline above, which pulls the same data.
+
+## Run locally
+
+```bash
+npm run serve      # static preview at http://localhost:5174
+npm run build      # re-fetch the feed(s) and rebuild schedule.json
+```
+
+Test the parser against a downloaded `.ics` without hitting the network:
+
+```bash
+node scripts/build-schedule.js --file=path/to/downloaded.ics
+```
+
+## Deploy (GitHub Pages)
+
+1. Create a GitHub repo and push these files.
+2. **Settings → Pages** → deploy from the `main` branch, root.
+3. The included workflow (`.github/workflows/refresh-schedule.yml`) rebuilds `schedule.json` hourly and commits it back on change. It runs with the repo's default `GITHUB_TOKEN` — no secrets needed.
+
+The page is marked `noindex` so it stays out of search engines; anyone with the link can view it.
+
+## Configuring the QGenda source
+
+The `qgenda` entry in `CALENDARS` (top of `scripts/build-schedule.js`) has a few knobs:
+
+```js
+{
+  id: "qgenda", label: "Work · QGenda", color: "#D54070", color2: "#CA5699",
+  type: "qgenda-quicklink",
+  viewUrl: "https://app.qgenda.com/Link/view?linkKey=…&landingPageId=…",
+  staff: "Towbin",     // matched against last name or QGenda abbreviation
+  weeks: 10,           // how many weeks forward to pull
+  hideTasks: [],       // assignment labels to drop, e.g. ["No Call", "JEOPARDY", "Request a Shift"]
+}
+```
+
+- **`staff`** picks whose entries to keep out of the department schedule.
+- **`hideTasks`** removes pure call-pool / bookkeeping labels that don't say where Alex actually is. Leave empty to show everything.
+- If the share link is ever regenerated, paste the new `Link/view` URL into `viewUrl` — nothing else changes.
+
+## Adding another calendar later
+
+Add an entry to `CALENDARS` — an `ics` feed or another quicklink:
+
+```js
+{ id: "personal", label: "Personal", color: "#59B8DA", color2: "#73B44A", type: "ics", url: "https://…/basic.ics" }
+```
+
+Each assignment is tagged with its calendar's `id`, so cards pick up that source's accent color and a legend appears automatically once there's more than one.
+
+Displayed times come straight from QGenda in **US Eastern**; ICS feeds' UTC times are converted using `DISPLAY_TZ` in the build script.

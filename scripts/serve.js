@@ -1,0 +1,43 @@
+#!/usr/bin/env node
+/* Minimal static file server for local preview of the Where Is Alex site. */
+import { createServer } from "node:http";
+import { readFile } from "node:fs/promises";
+import { extname, join, normalize, dirname } from "node:path";
+import { fileURLToPath } from "node:url";
+
+const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
+const PORT = Number(process.env.PORT) || 5174;
+
+const MIME = {
+  ".html": "text/html; charset=utf-8",
+  ".js": "text/javascript; charset=utf-8",
+  ".css": "text/css; charset=utf-8",
+  ".json": "application/json; charset=utf-8",
+  ".svg": "image/svg+xml",
+  ".webmanifest": "application/manifest+json",
+  ".png": "image/png",
+  ".jpg": "image/jpeg",
+  ".ico": "image/x-icon",
+};
+
+createServer(async (req, res) => {
+  try {
+    let path = decodeURIComponent(new URL(req.url, "http://localhost").pathname);
+    if (path === "/") path = "/index.html";
+    const filePath = normalize(join(ROOT, path));
+    if (!filePath.startsWith(ROOT)) {
+      res.writeHead(403).end("Forbidden");
+      return;
+    }
+    const body = await readFile(filePath);
+    res.writeHead(200, {
+      "Content-Type": MIME[extname(filePath)] || "application/octet-stream",
+      "Cache-Control": "no-cache",
+    });
+    res.end(body);
+  } catch {
+    res.writeHead(404).end("Not found");
+  }
+}).listen(PORT, () => {
+  console.log(`Where Is Alex preview → http://localhost:${PORT}`);
+});

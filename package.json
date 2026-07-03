@@ -1,0 +1,12 @@
+{
+  "name": "whereisalex",
+  "version": "1.0.0",
+  "description": "Where Is Alex — a live schedule page fed by QGenda (and future) calendars.",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-schedule.js",
+    "serve": "node scripts/serve.js"
+  },
+  "license": "ISC"
+}

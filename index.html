@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="paper">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Where Is Alex?</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="manifest" href="assets/site.webmanifest" />
+  <meta name="theme-color" content="#14110C" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Set the theme before first paint (no flash): saved choice wins, else
+       follow the OS dark/light setting on first visit, else default paper. -->
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem("wia-theme");
+        if (saved === "ink" || saved === "paper") {
+          document.documentElement.setAttribute("data-theme", saved);
+          return;
+        }
+      } catch (e) { /* localStorage blocked — fall through to OS preference */ }
+      try {
+        if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
+          document.documentElement.setAttribute("data-theme", "ink");
+        }
+      } catch (e) { /* keep the default paper theme */ }
+    })();
+  </script>
+</head>
+<body>
+  <header class="masthead">
+    <a class="masthead__brand" href="#" aria-label="Where Is Alex">
+      <img src="assets/wordmark.svg" alt="Where Is Alex" />
+    </a>
+    <nav class="masthead__nav">
+      <button class="nav-btn" id="todayBtn">Today</button>
+      <button class="nav-btn" id="jumpBtn">Jump to&hellip;</button>
+      <button class="theme-toggle" id="themeBtn" aria-label="Toggle theme" title="Toggle paper / ink">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+      </button>
+    </nav>
+  </header>
+
+  <main class="stage">
+    <section class="hero" id="hero" aria-live="polite"></section>
+
+    <section class="upcoming" id="upcoming">
+      <div class="upcoming__head">
+        <h2 class="upcoming__title">Upcoming</h2>
+        <div class="legend" id="legend" hidden></div>
+      </div>
+      <ol class="daylist" id="daylist"></ol>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span class="footer__updated" id="lastUpdated"></span>
+  </footer>
+
+  <dialog class="jumper" id="jumperDialog">
+    <form method="dialog">
+      <h3>Jump to a day</h3>
+      <div class="jumper__controls">
+        <button class="jumper__toggle" id="jumperPastToggle" type="button" hidden></button>
+      </div>
+      <ul class="jumper__list" id="jumperList"></ul>
+      <button class="jumper__close" type="submit">Close</button>
+    </form>
+  </dialog>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
