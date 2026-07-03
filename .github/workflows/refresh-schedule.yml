@@ -6,7 +6,10 @@ name: Refresh schedule
 
 on:
   schedule:
-    - cron: "0 * * * *" # top of every hour (UTC)
+    # Target: noon & midnight US Eastern. Cron is UTC and can't follow DST, so
+    # we fire at both the EST and EDT candidate hours (00/12 ET is 04/05 & 16/17
+    # UTC) and a guard below drops the two that aren't actually noon/midnight ET.
+    - cron: "0 4,5,16,17 * * *"
   workflow_dispatch: {}  # manual "Run workflow" button in the Actions tab
 
 permissions:
@@ -28,7 +31,17 @@ jobs:
         with:
           node-version: 20
 
+      - name: Skip scheduled runs that aren't noon/midnight Eastern
+        if: github.event_name == 'schedule'
+        run: |
+          H=$(TZ=America/New_York date +%H)
+          if [ "$H" != "00" ] && [ "$H" != "12" ]; then
+            echo "Eastern hour is $H — not noon/midnight, skipping."
+            echo "skip=true" >> "$GITHUB_ENV"
+          fi
+
       - name: Rebuild schedule.json and commit only on data change
+        if: env.skip != 'true'
         run: |
           set -euo pipefail
           # Hash the schedule (ignoring the _generatedAt timestamp) before…
