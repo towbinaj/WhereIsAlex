@@ -1,9 +1,13 @@
 <svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Where's Alex">
   <defs>
-    <linearGradient id="pinGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="pinGradient" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#D54070"/>
-      <stop offset="50%" stop-color="#CA5699"/>
-      <stop offset="100%" stop-color="#59B8DA"/>
+      <stop offset="16.6%" stop-color="#8F4469"/>
+      <stop offset="33.2%" stop-color="#CA5699"/>
+      <stop offset="49.8%" stop-color="#59B8DA"/>
+      <stop offset="66.4%" stop-color="#9AD0DD"/>
+      <stop offset="83%" stop-color="#73B44A"/>
+      <stop offset="100%" stop-color="#9AC449"/>
     </linearGradient>
   </defs>
   <path d="M32 4 C17 4 5 16 5 31 C5 52 32 60 32 60 C32 60 59 52 59 31 C59 16 47 4 32 4 Z"
