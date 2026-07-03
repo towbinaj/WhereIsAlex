@@ -1,6 +1,6 @@
-# Where Is Alex
+# Where's Alex
 
-A small, fast page that answers one question: **where is Alex right now, and where will Alex be next.** It reads Alex's QGenda work schedule (an iCalendar feed) and shows today's assignment front-and-center, with the days ahead below. Designed as a sibling to the SPARK calendar — same paper/ink theme, IBM Plex + JetBrains Mono type, gradient brand accents.
+A small, fast page that answers one question: **where's Alex right now, and where will Alex be next.** It reads Alex's QGenda work schedule (an iCalendar feed) and shows today's assignment front-and-center, with the days ahead below. Designed as a sibling to the SPARK calendar — same paper/ink theme, IBM Plex + JetBrains Mono type, gradient brand accents.
 
 ## How it works
 

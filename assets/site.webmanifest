@@ -1,6 +1,6 @@
 {
-  "name": "Where Is Alex",
-  "short_name": "Where Is Alex",
+  "name": "Where's Alex",
+  "short_name": "Where's Alex",
   "icons": [
     { "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml" }
   ],
