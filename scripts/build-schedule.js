@@ -31,6 +31,22 @@ import { fileURLToPath } from "node:url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
+// Load a local, gitignored .env so `npm run build` works in dev without
+// exporting vars each time. In CI, QGENDA_VIEW_URL comes from a GitHub Actions
+// secret instead, so the share link is never committed to the repo.
+function loadDotEnv() {
+  try {
+    const txt = readFileSync(join(__dirname, "..", ".env"), "utf8");
+    for (const line of txt.split(/\r?\n/)) {
+      const m = /^\s*([A-Za-z0-9_]+)\s*=\s*(.*)$/.exec(line);
+      if (m && !(m[1] in process.env)) {
+        process.env[m[1]] = m[2].trim().replace(/^["']|["']$/g, "");
+      }
+    }
+  } catch { /* no .env file — rely on the real environment */ }
+}
+loadDotEnv();
+
 /* ------------------------------------------------------------------ config */
 
 const CALENDARS = [
@@ -40,9 +56,9 @@ const CALENDARS = [
     color: "#D54070",
     color2: "#CA5699",
     type: "qgenda-quicklink",
-    // The public QGenda share link (department schedule, "Full by Staff").
-    viewUrl:
-      "https://app.qgenda.com/Link/view?linkKey=e451bcf2-95f4-446c-a7f1-f8407bc65363&landingPageId=53031834-416e-40ed-b125-b1c4dafa90ef",
+    // QGenda share link — kept OUT of source. Set QGENDA_VIEW_URL in a local
+    // .env (gitignored) or as the QGENDA_VIEW_URL GitHub Actions secret.
+    viewUrl: process.env.QGENDA_VIEW_URL,
     // Which staff member to keep — matched against last name or QGenda abbreviation.
     staff: "Towbin",
     // How many weeks forward to pull.
@@ -215,6 +231,11 @@ function isoToHHMM(iso) {
 }
 
 async function buildFromQuicklink(cal) {
+  if (!cal.viewUrl) {
+    throw new Error(
+      "QGENDA_VIEW_URL is not set — add it to a local .env file or the QGENDA_VIEW_URL GitHub Actions secret"
+    );
+  }
   const ctx = await loadQuicklinkContext(cal.viewUrl);
   console.log(`  [${cal.id}] company=${ctx.companyKey.slice(0, 8)}… link=${ctx.linkKey.slice(0, 8)}… start=${ctx.startDate.slice(0, 10)}`);
 

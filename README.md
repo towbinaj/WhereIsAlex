@@ -46,16 +46,19 @@ The `qgenda` entry in `CALENDARS` (top of `scripts/build-schedule.js`) has a few
 {
   id: "qgenda", label: "Work · QGenda", color: "#D54070", color2: "#CA5699",
   type: "qgenda-quicklink",
-  viewUrl: "https://app.qgenda.com/Link/view?linkKey=…&landingPageId=…",
+  viewUrl: process.env.QGENDA_VIEW_URL,   // set via .env / GitHub secret, not committed
   staff: "Towbin",     // matched against last name or QGenda abbreviation
   weeks: 10,           // how many weeks forward to pull
   hideTasks: [],       // assignment labels to drop, e.g. ["No Call", "JEOPARDY", "Request a Shift"]
 }
 ```
 
+- **`QGENDA_VIEW_URL`** — the QGenda `Link/view` share URL is **not** stored in the code. Provide it via:
+  - **Local:** a gitignored `.env` file at the repo root — `QGENDA_VIEW_URL=https://app.qgenda.com/Link/view?linkKey=…&landingPageId=…`
+  - **CI:** a repo **Actions secret** named `QGENDA_VIEW_URL` (`gh secret set QGENDA_VIEW_URL`), which the workflow passes to the build step.
+  If the share link is ever regenerated, update those two places — nothing in the code changes.
 - **`staff`** picks whose entries to keep out of the department schedule.
 - **`hideTasks`** removes pure call-pool / bookkeeping labels that don't say where Alex actually is. Leave empty to show everything.
-- If the share link is ever regenerated, paste the new `Link/view` URL into `viewUrl` — nothing else changes.
 
 ### Assignment icons
 

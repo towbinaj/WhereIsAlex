@@ -42,6 +42,8 @@ jobs:
 
       - name: Rebuild schedule.json and commit only on data change
         if: env.skip != 'true'
+        env:
+          QGENDA_VIEW_URL: ${{ secrets.QGENDA_VIEW_URL }}
         run: |
           set -euo pipefail
           # Hash the schedule (ignoring the _generatedAt timestamp) before…
