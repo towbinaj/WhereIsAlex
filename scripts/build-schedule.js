@@ -120,6 +120,16 @@ const CATEGORY_KEYWORDS = [
 ];
 const DEFAULT_CATEGORY = "clinical";
 
+// Relabel certain assignments before display (keyed by lowercased label).
+// e.g. "VACATION" → "Off" so the public page doesn't broadcast travel dates —
+// it just reads like any ordinary day off.
+const RELABEL_TASKS = {
+  "vacation": "Off",
+};
+function relabelTask(title) {
+  return RELABEL_TASKS[String(title || "").trim().toLowerCase()] || title;
+}
+
 function classifyTask(title) {
   const t = String(title || "").trim().toLowerCase();
   if (TASK_CATEGORIES[t]) return TASK_CATEGORIES[t];
@@ -455,8 +465,11 @@ async function main() {
     process.exit(1);
   }
 
-  // Tag every assignment with its category (drives the icon on the page).
-  for (const a of all) a.category = classifyTask(a.title);
+  // Relabel (e.g. VACATION → Off), then tag each assignment with its category.
+  for (const a of all) {
+    a.title = relabelTask(a.title);
+    a.category = classifyTask(a.title);
+  }
 
   // Dedupe (same uid + day) and group into days.
   const seen = new Set();

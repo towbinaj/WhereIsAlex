@@ -1,5 +1,5 @@
 {
-  "_generatedAt": "2026-07-03T20:37:19.763Z",
+  "_generatedAt": "2026-07-03T20:43:18.064Z",
   "person": "Alex",
   "displayTimeZone": "America/New_York",
   "calendars": [
@@ -269,7 +269,7 @@
         {
           "calendar": "qgenda",
           "date": "2026-07-15",
-          "title": "VACATION",
+          "title": "Off",
           "location": "",
           "notes": "",
           "allDay": true,
@@ -286,7 +286,7 @@
         {
           "calendar": "qgenda",
           "date": "2026-07-16",
-          "title": "VACATION",
+          "title": "Off",
           "location": "",
           "notes": "",
           "allDay": true,
@@ -303,7 +303,7 @@
         {
           "calendar": "qgenda",
           "date": "2026-07-17",
-          "title": "VACATION",
+          "title": "Off",
           "location": "",
           "notes": "",
           "allDay": true,
@@ -502,7 +502,7 @@
         {
           "calendar": "qgenda",
           "date": "2026-08-03",
-          "title": "VACATION",
+          "title": "Off",
           "location": "",
           "notes": "",
           "allDay": true,
@@ -519,7 +519,7 @@
         {
           "calendar": "qgenda",
           "date": "2026-08-04",
-          "title": "VACATION",
+          "title": "Off",
           "location": "",
           "notes": "",
           "allDay": true,
@@ -548,7 +548,7 @@
         {
           "calendar": "qgenda",
           "date": "2026-08-05",
-          "title": "VACATION",
+          "title": "Off",
           "location": "",
           "notes": "",
           "allDay": true,
@@ -565,7 +565,7 @@
         {
           "calendar": "qgenda",
           "date": "2026-08-06",
-          "title": "VACATION",
+          "title": "Off",
           "location": "",
           "notes": "",
           "allDay": true,
@@ -582,7 +582,7 @@
         {
           "calendar": "qgenda",
           "date": "2026-08-07",
-          "title": "VACATION",
+          "title": "Off",
           "location": "",
           "notes": "",
           "allDay": true,
