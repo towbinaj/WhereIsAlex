@@ -61,6 +61,17 @@ The `qgenda` entry in `CALENDARS` (top of `scripts/build-schedule.js`) has a few
 
 Each assignment gets a category icon: **clinical** (pulse), **conference** (people), **call** (phone), **office** (briefcase), **away** (sun). Categories are assigned in `scripts/build-schedule.js` — `TASK_CATEGORIES` maps known labels exactly, and `CATEGORY_KEYWORDS` is an ordered keyword fallback so new/unseen labels still get sorted. To reclassify a label, edit the map.
 
+### Icons / favicons
+
+- **Browser tab:** `assets/favicon.svg` — the pin with a **transparent** center, so it adapts to any tab color.
+- **iOS home screen / installed PWA:** `assets/apple-touch-icon.png` (+ `icon-192.png` / `icon-512.png`) — the pin on an **opaque paper chip** (iOS composites transparent icons onto black, so home-screen icons need a solid background). Regenerate from `assets/icon-chip.svg`:
+  ```sh
+  qlmanage -t -s 1024 -o /tmp icon-chip.svg
+  sips -z 180 180 /tmp/icon-chip.svg.png --out apple-touch-icon.png
+  sips -z 192 192 /tmp/icon-chip.svg.png --out icon-192.png
+  sips -z 512 512 /tmp/icon-chip.svg.png --out icon-512.png
+  ```
+
 ## Adding another calendar later
 
 Add an entry to `CALENDARS` — an `ics` feed or another quicklink:
