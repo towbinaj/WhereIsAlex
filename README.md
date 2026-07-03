@@ -57,6 +57,10 @@ The `qgenda` entry in `CALENDARS` (top of `scripts/build-schedule.js`) has a few
 - **`hideTasks`** removes pure call-pool / bookkeeping labels that don't say where Alex actually is. Leave empty to show everything.
 - If the share link is ever regenerated, paste the new `Link/view` URL into `viewUrl` — nothing else changes.
 
+### Assignment icons
+
+Each assignment gets a category icon: **clinical** (pulse), **conference** (people), **call** (phone), **office** (briefcase), **away** (sun). Categories are assigned in `scripts/build-schedule.js` — `TASK_CATEGORIES` maps known labels exactly, and `CATEGORY_KEYWORDS` is an ordered keyword fallback so new/unseen labels still get sorted. To reclassify a label, edit the map.
+
 ## Adding another calendar later
 
 Add an entry to `CALENDARS` — an `ics` feed or another quicklink:

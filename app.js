@@ -70,6 +70,23 @@ function isLiveNow(a, date) {
 const ICON_PIN = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>`;
 const ICON_CLOCK = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>`;
 
+// Category icons — clinical | conference | call | office | away.
+const CAT_ICONS = {
+  clinical:   `<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>`, // pulse / activity
+  conference: `<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>`, // people
+  call:       `<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>`, // phone
+  office:     `<rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>`, // briefcase
+  away:       `<circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>`, // sun
+};
+
+const CAT_LABEL = { clinical: "Clinical", conference: "Conference", call: "Call", office: "Office", away: "Away" };
+
+function catIconHTML(category) {
+  const body = CAT_ICONS[category];
+  if (!body) return "";
+  return `<span class="cat-icon" role="img" aria-label="${CAT_LABEL[category] || ""}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${body}</svg></span>`;
+}
+
 /* ---------- Render: shared meta bits ---------- */
 
 function metaTimeHTML(a) {
@@ -91,7 +108,7 @@ function calChipHTML(calId) {
 function heroAssignmentHTML(a, date) {
   return `
     <div class="hero__assignment">
-      <h1 class="hero__title">${escapeHTML(a.title)}</h1>
+      <h1 class="hero__title">${catIconHTML(a.category)}<span>${escapeHTML(a.title)}</span></h1>
       <div class="hero__meta">
         ${metaTimeHTML(a)}
         ${metaLocationHTML(a)}
@@ -151,7 +168,7 @@ function renderHero() {
 function assignmentRowHTML(a) {
   return `
     <div class="assignment" style="${accentStyle(a.calendar)}">
-      <h3 class="assignment__title">${escapeHTML(a.title)}</h3>
+      <h3 class="assignment__title">${catIconHTML(a.category)}<span>${escapeHTML(a.title)}</span></h3>
       <div class="assignment__meta">
         ${metaTimeHTML(a)}
         ${metaLocationHTML(a)}

@@ -65,6 +65,54 @@ const DISPLAY_TZ = "America/New_York";
 // Keep a short rolling window of past days; all future days are kept.
 const RETAIN_PAST_DAYS = 14;
 
+/* --------------------------------------------------------- task categories */
+// Each assignment is tagged with a category so the page can show a matching
+// icon: clinical | conference | call | office | away.
+//
+// Known labels are mapped exactly (authoritative). Anything not listed falls
+// through to the keyword rules, then to the default. To reclassify a label,
+// edit the map; to teach the fallback a new pattern, edit CATEGORY_KEYWORDS.
+const TASK_CATEGORIES = {
+  "us": "clinical",
+  "fluoro": "clinical",
+  "liberty": "clinical",
+  "trunk 1 (m-f)": "clinical",
+  "trunk 2 (m-f)": "clinical",
+  "resource person": "clinical",
+  "solid tumor board": "conference",
+  "tuberous sclerosis conf": "conference",
+  "overnight beeper": "call",
+  "eve 1": "call",
+  "eve 3": "call",
+  "opl we/hol beeper": "call",
+  "weekend/holiday late": "call",
+  "holiday late": "call",
+  "jeopardy": "call",
+  "office": "office",
+  "vacation": "away",
+  "observed holiday": "away",
+  "meeting": "away",
+};
+
+// Ordered keyword fallback for labels not in the map above. First match wins,
+// so keep call/conference ahead of the broad "holiday" → away rule.
+const CATEGORY_KEYWORDS = [
+  ["call", ["beeper", "call", "jeopardy", "overnight", "pager", "opl", "late"]],
+  ["conference", ["board", "conf", "tumor", "rounds", "lecture", "didactic"]],
+  ["office", ["office", "admin"]],
+  ["away", ["vacation", "holiday", "pto", "leave", "away", "meeting", "off"]],
+];
+const DEFAULT_CATEGORY = "clinical";
+
+function classifyTask(title) {
+  const t = String(title || "").trim().toLowerCase();
+  if (TASK_CATEGORIES[t]) return TASK_CATEGORIES[t];
+  for (const [cat, kws] of CATEGORY_KEYWORDS) {
+    if (kws.some((k) => t.includes(k))) return cat;
+  }
+  return DEFAULT_CATEGORY;
+}
+
 /* ------------------------------------------------------------------- args */
 
 function parseArgs() {
@@ -385,6 +433,9 @@ async function main() {
     console.error("✗ No calendar could be loaded. Leaving the existing schedule.json in place.");
     process.exit(1);
   }
+
+  // Tag every assignment with its category (drives the icon on the page).
+  for (const a of all) a.category = classifyTask(a.title);
 
   // Dedupe (same uid + day) and group into days.
   const seen = new Set();
