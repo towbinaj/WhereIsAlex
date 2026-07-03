@@ -1,5 +1,5 @@
 {
-  "_generatedAt": "2026-07-03T19:32:59.203Z",
+  "_generatedAt": "2026-07-03T19:40:49.506Z",
   "person": "Alex",
   "displayTimeZone": "America/New_York",
   "calendars": [
@@ -44,17 +44,6 @@
         {
           "calendar": "qgenda",
           "date": "2026-06-30",
-          "title": "OFFICE",
-          "location": "",
-          "notes": "",
-          "allDay": true,
-          "startTime": null,
-          "endTime": null,
-          "uid": "797066be-c12e-4814-8117-760fb387f85f"
-        },
-        {
-          "calendar": "qgenda",
-          "date": "2026-06-30",
           "title": "US",
           "location": "",
           "notes": "",
@@ -62,17 +51,6 @@
           "startTime": "0745",
           "endTime": "1700",
           "uid": "faa7742a-290c-44c8-b750-24744c51613b"
-        },
-        {
-          "calendar": "qgenda",
-          "date": "2026-06-30",
-          "title": "Solid Tumor Board",
-          "location": "",
-          "notes": "",
-          "allDay": false,
-          "startTime": "1200",
-          "endTime": "1300",
-          "uid": "0d3945af-e425-4ceb-9a72-dcd861259c09"
         }
       ]
     },
@@ -121,17 +99,6 @@
           "startTime": null,
           "endTime": null,
           "uid": "11b71739-f471-4eaf-b9ec-54086d6aa767"
-        },
-        {
-          "calendar": "qgenda",
-          "date": "2026-07-03",
-          "title": "Tuberous Sclerosis Conf",
-          "location": "",
-          "notes": "holiday",
-          "allDay": false,
-          "startTime": "1400",
-          "endTime": "1500",
-          "uid": "50a6b13b-44ed-4d8d-9210-08cb520bd16a"
         }
       ]
     },
@@ -191,17 +158,6 @@
           "startTime": null,
           "endTime": null,
           "uid": "3a0a69f9-4c13-4d8b-a89e-d143902bbfd9"
-        },
-        {
-          "calendar": "qgenda",
-          "date": "2026-07-08",
-          "title": "OFFICE",
-          "location": "",
-          "notes": "",
-          "allDay": true,
-          "startTime": null,
-          "endTime": null,
-          "uid": "946f185b-0f63-484e-bcf7-1d0687e4d7b4"
         },
         {
           "calendar": "qgenda",
@@ -459,17 +415,6 @@
           "startTime": null,
           "endTime": null,
           "uid": "08f2cef5-3033-4c5d-889e-5156f2290f89"
-        },
-        {
-          "calendar": "qgenda",
-          "date": "2026-07-28",
-          "title": "Solid Tumor Board",
-          "location": "",
-          "notes": "",
-          "allDay": false,
-          "startTime": "1200",
-          "endTime": "1300",
-          "uid": "d9feb5b6-eafb-436a-add1-8cfd94e8cfa0"
         }
       ]
     },

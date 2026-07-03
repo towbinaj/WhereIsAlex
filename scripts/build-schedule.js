@@ -213,6 +213,7 @@ async function buildFromQuicklink(cal) {
   const records = [];
   for (const it of sched.items || []) {
     if (it.staffMemberKey !== me.staffMemberKey) continue;
+    if (it.isStruck) continue; // crossed-off in QGenda = canceled / no longer active
     const title = (taskName.get(it.taskKey) || "").trim();
     if (!title || hide.has(title.toLowerCase())) continue;
     const startTime = isoToHHMM(it.startTime);
