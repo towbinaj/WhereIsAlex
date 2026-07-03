@@ -182,14 +182,20 @@ html, body {
   gap: 0.6rem;
 }
 
-/* Category icon — scales with the title it sits on */
+/* Category icon — scales with the title it sits on, tinted per category
+   using stops pulled from the brand gradient. */
 .cat-icon {
   display: inline-flex;
   flex-shrink: 0;
   color: var(--accent);
 }
 .cat-icon svg { width: 0.95em; height: 0.95em; display: block; }
-.hero__title .cat-icon { color: var(--accent); }
+
+.cat-icon--clinical   { color: #D54070; } /* pink */
+.cat-icon--call       { color: #CA5699; } /* magenta */
+.cat-icon--conference { color: #8F4469; } /* mauve */
+.cat-icon--office     { color: #73B44A; } /* green */
+.cat-icon--away       { color: #59B8DA; } /* sky */
 
 .hero__meta {
   display: flex;

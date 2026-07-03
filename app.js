@@ -84,7 +84,7 @@ const CAT_LABEL = { clinical: "Clinical", conference: "Conference", call: "Call"
 function catIconHTML(category) {
   const body = CAT_ICONS[category];
   if (!body) return "";
-  return `<span class="cat-icon" role="img" aria-label="${CAT_LABEL[category] || ""}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${body}</svg></span>`;
+  return `<span class="cat-icon cat-icon--${category}" role="img" aria-label="${CAT_LABEL[category] || ""}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${body}</svg></span>`;
 }
 
 /* ---------- Render: shared meta bits ---------- */
