@@ -191,11 +191,11 @@ html, body {
 }
 .cat-icon svg { width: 0.95em; height: 0.95em; display: block; }
 
-.cat-icon--clinical   { color: #D54070; } /* pink */
-.cat-icon--call       { color: #CA5699; } /* magenta */
-.cat-icon--conference { color: #8F4469; } /* mauve */
-.cat-icon--office     { color: #73B44A; } /* green */
-.cat-icon--away       { color: #59B8DA; } /* sky */
+.cat-icon--clinical   { color: var(--g-pink); }
+.cat-icon--call       { color: var(--g-magenta); }
+.cat-icon--conference { color: var(--g-mauve); }
+.cat-icon--office     { color: var(--g-green); }
+.cat-icon--away       { color: var(--g-sky); }
 
 .hero__meta {
   display: flex;
@@ -343,6 +343,13 @@ html, body {
   flex-direction: column;
   gap: 0.3rem;
 }
+
+/* Side line matches the category (the icon color); today's day bar stays gradient. */
+.assignment--clinical   { border-left-color: var(--g-pink); }
+.assignment--call       { border-left-color: var(--g-magenta); }
+.assignment--conference { border-left-color: var(--g-mauve); }
+.assignment--office     { border-left-color: var(--g-green); }
+.assignment--away       { border-left-color: var(--g-sky); }
 
 .assignment__title {
   font-family: var(--display);

@@ -167,7 +167,7 @@ function renderHero() {
 
 function assignmentRowHTML(a) {
   return `
-    <div class="assignment" style="${accentStyle(a.calendar)}">
+    <div class="assignment assignment--${a.category}" style="${accentStyle(a.calendar)}">
       <h3 class="assignment__title">${catIconHTML(a.category)}<span>${escapeHTML(a.title)}</span></h3>
       <div class="assignment__meta">
         ${metaTimeHTML(a)}
