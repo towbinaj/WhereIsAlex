@@ -16,6 +16,11 @@ let calendars = [];
 let generatedAt = "";
 let showPast = false;
 
+// The main list and Jump-to stay near-term (~6 weeks). Far-future days off
+// live only in the "Days off" button.
+const LIST_HORIZON_DAYS = 42;
+function baseHorizon() { return addDaysISO(TODAY_STR, LIST_HORIZON_DAYS); }
+
 /* ---------- Helpers ---------- */
 
 // "0800" -> "8:00a", "1230" -> "12:30p"
@@ -201,7 +206,7 @@ function dayHTML(d) {
 
 function renderDayList() {
   const list = document.getElementById("daylist");
-  const visible = days.filter((d) => (showPast || d.date >= TODAY_STR) && d.assignments.length);
+  const visible = days.filter((d) => (showPast || d.date >= TODAY_STR) && d.date <= baseHorizon() && d.assignments.length);
   list.innerHTML = visible.length
     ? visible.map(dayHTML).join("")
     : `<li class="daylist__empty">No assignments to show${showPast ? "" : " — check back soon"}.</li>`;
@@ -224,7 +229,7 @@ function fmtCount(n) { return `${n} assignment${n === 1 ? "" : "s"}`; }
 
 function populateJumper() {
   const list = document.getElementById("jumperList");
-  const items = days.filter((d) => (showPast || d.date >= TODAY_STR) && d.assignments.length);
+  const items = days.filter((d) => (showPast || d.date >= TODAY_STR) && d.date <= baseHorizon() && d.assignments.length);
 
   let html = "";
   let lastMonth = "";
@@ -328,19 +333,13 @@ function populateOffDialog() {
     const n = rangeDayCount(r);
     html += `
       <li class="jumper__item">
-        <button data-date="${r.start}">
+        <div class="jumper__row">
           <span>${escapeHTML(fmtOffRange(r))}</span>
           <span class="day-meta">${n} day${n === 1 ? "" : "s"}</span>
-        </button>
+        </div>
       </li>`;
   }
   list.innerHTML = html;
-  list.querySelectorAll("button[data-date]").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      document.getElementById("offDialog").close();
-      scrollToDay(btn.dataset.date);
-    });
-  });
 }
 
 /* ---------- Footer ---------- */

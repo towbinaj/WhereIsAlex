@@ -485,6 +485,17 @@ html, body {
 }
 .jumper__list button:hover { background: rgba(213, 64, 112, 0.06); }
 .jumper__list .is-current { background: rgba(89, 184, 218, 0.12); }
+.jumper__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  padding: 0.8rem 0.25rem;
+  font-family: var(--body);
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--ink);
+}
 .jumper__list .day-meta {
   font-family: var(--mono);
   font-size: 0.66rem;
