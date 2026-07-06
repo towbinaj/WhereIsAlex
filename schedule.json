@@ -1,5 +1,5 @@
 {
-  "_generatedAt": "2026-07-06T02:55:45.971Z",
+  "_generatedAt": "2026-07-06T04:14:46.131Z",
   "person": "Alex",
   "displayTimeZone": "America/New_York",
   "fiscalYear": {
@@ -1601,7 +1601,7 @@
           "startTime": "1430",
           "endTime": "2200",
           "uid": "3f141f55-346c-4d02-8a61-1769a2942365",
-          "category": "clinical"
+          "category": "call"
         }
       ]
     },
