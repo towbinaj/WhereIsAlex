@@ -1,5 +1,5 @@
 {
-  "_generatedAt": "2026-07-06T02:46:09.488Z",
+  "_generatedAt": "2026-07-06T02:55:45.971Z",
   "person": "Alex",
   "displayTimeZone": "America/New_York",
   "fiscalYear": {
@@ -1226,7 +1226,7 @@
           "startTime": "1200",
           "endTime": "1700",
           "uid": "b77fc540-8db8-4966-8c40-218ce768f371",
-          "category": "clinical"
+          "category": "call"
         }
       ]
     },
@@ -1243,7 +1243,7 @@
           "startTime": "1200",
           "endTime": "1700",
           "uid": "8a71aabf-b90a-4e83-8187-ce8080ec120d",
-          "category": "clinical"
+          "category": "call"
         }
       ]
     },
@@ -2102,7 +2102,7 @@
           "startTime": "1200",
           "endTime": "1700",
           "uid": "99d38e81-3047-4a6e-8f44-64c1d86c3bd0",
-          "category": "clinical"
+          "category": "call"
         }
       ]
     },
@@ -2119,7 +2119,7 @@
           "startTime": "1200",
           "endTime": "1700",
           "uid": "870c3164-c3f5-461e-b5f5-1ea7a4f431e3",
-          "category": "clinical"
+          "category": "call"
         }
       ]
     },

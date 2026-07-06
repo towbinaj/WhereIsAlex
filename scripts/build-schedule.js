@@ -96,6 +96,7 @@ const TASK_CATEGORIES = {
   "eve 1": "call",
   "eve 3": "call",
   "opl we/hol beeper": "call",
+  "weekend mid": "call",
   "weekend/holiday late": "call",
   "weekend/holiday early": "call",
   "holiday late": "call",
