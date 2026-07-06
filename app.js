@@ -14,6 +14,7 @@ let days = [];
 let calMap = new Map();      // id -> { label, color, color2 }
 let calendars = [];
 let generatedAt = "";
+let fiscalYear = null;
 let showPast = false;
 
 // The main list and Jump-to stay near-term (~6 weeks). Far-future days off
@@ -342,6 +343,66 @@ function populateOffDialog() {
   list.innerHTML = html;
 }
 
+/* ---------- Year stats (fiscal-year shift tally) ---------- */
+
+const STAT_CATEGORIES = [
+  { key: "clinical", name: "Clinical" },
+  { key: "call", name: "Call" },
+  { key: "conference", name: "Conference" },
+  { key: "office", name: "Office" },
+  { key: "away", name: "Off" },
+];
+
+// Tally assignments across the fiscal year: per category and per label,
+// tracking how many have already happened ("done") vs the full-year total.
+function computeStats() {
+  const cats = {};
+  for (const day of days) {
+    const past = day.date < TODAY_STR;
+    for (const a of day.assignments) {
+      const c = (cats[a.category] ||= { total: 0, done: 0, labels: {} });
+      c.total++; if (past) c.done++;
+      const l = (c.labels[a.title] ||= { total: 0, done: 0 });
+      l.total++; if (past) l.done++;
+    }
+  }
+  return cats;
+}
+
+function populateStatsDialog() {
+  const cats = computeStats();
+  let totalAll = 0, doneAll = 0;
+  let html = "";
+  for (const { key, name } of STAT_CATEGORIES) {
+    const c = cats[key];
+    if (!c) continue;
+    totalAll += c.total; doneAll += c.done;
+    const labels = Object.entries(c.labels)
+      .sort((a, b) => b[1].total - a[1].total)
+      .map(([lbl, v]) => `${escapeHTML(lbl)} ${v.total}`)
+      .join(" · ");
+    html += `
+      <li class="stat">
+        <div class="stat__head">
+          ${catIconHTML(key)}
+          <span class="stat__name">${name}</span>
+          <span class="stat__total">${c.total}${c.done ? `<em> · ${c.done} done</em>` : ""}</span>
+        </div>
+        <div class="stat__labels">${labels}</div>
+      </li>`;
+  }
+  document.getElementById("statsList").innerHTML =
+    html || `<li class="jumper__empty">No shifts yet this fiscal year.</li>`;
+
+  document.getElementById("statsTitle").textContent =
+    fiscalYear ? `Fiscal Year ${fiscalYear.label}` : "Shift tally";
+  const range = fiscalYear
+    ? `${fmtDateShort(fiscalYear.start)} – ${fmtDateShort(fiscalYear.end)}`
+    : "";
+  document.getElementById("statsSub").textContent =
+    `${range}${range ? " · " : ""}${doneAll} of ${totalAll} completed`;
+}
+
 /* ---------- Footer ---------- */
 
 function setLastUpdated(iso) {
@@ -377,6 +438,12 @@ function setupNav() {
     offDialog.showModal();
   });
 
+  const statsDialog = document.getElementById("statsDialog");
+  document.getElementById("statsBtn").addEventListener("click", () => {
+    populateStatsDialog();
+    statsDialog.showModal();
+  });
+
   const dialog = document.getElementById("jumperDialog");
   document.getElementById("jumpBtn").addEventListener("click", () => {
     populateJumper();
@@ -404,6 +471,7 @@ async function boot() {
     days = data.days || [];
     calendars = data.calendars || [];
     generatedAt = data._generatedAt || "";
+    fiscalYear = data.fiscalYear || null;
   } catch (err) {
     console.warn("Could not load schedule.json.", err);
     days = [];

@@ -65,8 +65,18 @@
   </main>
 
   <footer class="footer">
+    <button class="footer__stats" id="statsBtn">Year stats</button>
     <span class="footer__updated" id="lastUpdated"></span>
   </footer>
+
+  <dialog class="jumper" id="statsDialog">
+    <form method="dialog">
+      <h3 id="statsTitle">Shift tally</h3>
+      <p class="stats__sub" id="statsSub"></p>
+      <ul class="jumper__list" id="statsList"></ul>
+      <button class="jumper__close" type="submit">Close</button>
+    </form>
+  </dialog>
 
   <dialog class="jumper" id="offDialog">
     <form method="dialog">

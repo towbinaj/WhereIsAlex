@@ -61,9 +61,6 @@ const CALENDARS = [
     viewUrl: process.env.QGENDA_VIEW_URL,
     // Which staff member to keep — matched against last name or QGenda abbreviation.
     staff: "Towbin",
-    // How many weeks forward to pull (a full year, so far-in-advance approved
-    // days off show up as soon as they're entered in QGenda).
-    weeks: 52,
     // Assignment labels to drop entirely (pure status / scheduling artifacts
     // that don't say where Alex is). Leave empty to show everything.
     hideTasks: ["No Call", "Request a Shift"],
@@ -78,9 +75,6 @@ const CALENDARS = [
 // Times without a zone are shown as-is; UTC ("Z") times in ICS feeds are
 // converted to this zone. Cincinnati / CCHMC is US Eastern.
 const DISPLAY_TZ = "America/New_York";
-
-// Keep a short rolling window of past days; all future days are kept.
-const RETAIN_PAST_DAYS = 14;
 
 /* --------------------------------------------------------- task categories */
 // Each assignment is tagged with a category so the page can show a matching
@@ -103,7 +97,9 @@ const TASK_CATEGORIES = {
   "eve 3": "call",
   "opl we/hol beeper": "call",
   "weekend/holiday late": "call",
+  "weekend/holiday early": "call",
   "holiday late": "call",
+  "holiday early": "call",
   "jeopardy": "call",
   "office": "office",
   "vacation": "away",
@@ -114,7 +110,7 @@ const TASK_CATEGORIES = {
 // Ordered keyword fallback for labels not in the map above. First match wins,
 // so keep call/conference ahead of the broad "holiday" → away rule.
 const CATEGORY_KEYWORDS = [
-  ["call", ["beeper", "call", "jeopardy", "overnight", "pager", "opl", "late"]],
+  ["call", ["beeper", "call", "jeopardy", "overnight", "pager", "opl", "late", "early"]],
   ["conference", ["board", "conf", "tumor", "rounds", "lecture", "didactic"]],
   ["office", ["office", "admin"]],
   ["away", ["vacation", "holiday", "pto", "leave", "away", "meeting", "off"]],
@@ -251,7 +247,14 @@ async function buildFromQuicklink(cal) {
   const ctx = await loadQuicklinkContext(cal.viewUrl);
   console.log(`  [${cal.id}] company=${ctx.companyKey.slice(0, 8)}… link=${ctx.linkKey.slice(0, 8)}… start=${ctx.startDate.slice(0, 10)}`);
 
-  const commonStart = ctx.startDate;
+  // Fetch the whole current fiscal year (Jul 1 – Jun 30) so the shift tally is
+  // complete — including months already elapsed. QGenda serves past schedule
+  // data, so anchoring the start to the FY works all year long.
+  const fy = fiscalYear(todayISO());
+  const commonStart = `${sundayOnOrBefore(fy.start)}T00:00:00`;
+  const fyWeeks = weeksBetween(commonStart.slice(0, 10), fy.end);
+  console.log(`  [${cal.id}] FY ${fy.label}: fetching ${commonStart.slice(0, 10)} + ${fyWeeks}w`);
+
   const [sched, staff, taskData] = await Promise.all([
     qgPost(ctx, `/Link/${ctx.linkKey}/ScheduleView/GetQuickLinkScheduleDisplayItems`, {
       companyKey: ctx.companyKey,
@@ -259,7 +262,7 @@ async function buildFromQuicklink(cal) {
       includePublishedOpens: true,
       startDate: commonStart,
       timeRangeUnitType: 1, // weeks
-      rangeValue: cal.weeks || 8,
+      rangeValue: fyWeeks,
       scheduleViewType: 1,
       selectedTimeZoneId: ctx.timeZoneId,
       weekStartDay: ctx.weekStartDay,
@@ -276,7 +279,7 @@ async function buildFromQuicklink(cal) {
     qgPost(ctx, `/Link/${ctx.linkKey}/QuickLinkPage/LinkTasks`, {
       linkAccessKey: "",
       startDate: commonStart,
-      endDate: addWeeksISO(commonStart, cal.weeks || 8),
+      endDate: addWeeksISO(commonStart, fyWeeks),
     }),
   ]);
 
@@ -443,6 +446,27 @@ function todayISO() {
   return `${get("year")}-${get("month")}-${get("day")}`;
 }
 
+// Fiscal year runs Jul 1 – Jun 30. Returns the FY window containing `todayISO`.
+function fiscalYear(iso) {
+  const [y, m] = iso.split("-").map(Number);
+  const startYear = m >= 7 ? y : y - 1;
+  return { start: `${startYear}-07-01`, end: `${startYear + 1}-06-30`, label: `${startYear}–${startYear + 1}` };
+}
+
+// The Sunday on or before `iso` (QGenda weeks start Sunday, weekStartDay=0).
+function sundayOnOrBefore(iso) {
+  const [y, mo, d] = iso.split("-").map(Number);
+  const dt = new Date(Date.UTC(y, mo - 1, d));
+  dt.setUTCDate(dt.getUTCDate() - dt.getUTCDay());
+  return `${dt.getUTCFullYear()}-${pad(dt.getUTCMonth() + 1)}-${pad(dt.getUTCDate())}`;
+}
+
+// Whole weeks needed to span [fromISO, toISO] inclusive.
+function weeksBetween(fromISO, toISO) {
+  const a = new Date(fromISO + "T00:00:00Z"), b = new Date(toISO + "T00:00:00Z");
+  return Math.ceil((b - a) / (7 * 86400000)) + 1;
+}
+
 async function main() {
   const { file } = parseArgs();
   const all = [];
@@ -484,13 +508,12 @@ async function main() {
     byDate.get(a.date).push(a);
   }
 
-  // Prune days older than the retention window.
-  const today = todayISO();
-  let cutoff = today;
-  for (let i = 0; i < RETAIN_PAST_DAYS; i++) cutoff = prevISO(cutoff);
+  // Keep the whole current fiscal year (Jul 1 – Jun 30): elapsed months feed
+  // the shift tally; upcoming months feed the list and days-off view.
+  const fy = fiscalYear(todayISO());
 
   const days = [...byDate.entries()]
-    .filter(([date]) => date >= cutoff)
+    .filter(([date]) => date >= fy.start && date <= fy.end)
     .sort((a, b) => a[0].localeCompare(b[0]))
     .map(([date, assignments]) => ({
       date,
@@ -501,24 +524,19 @@ async function main() {
     }));
 
   const total = days.reduce((n, d) => n + d.assignments.length, 0);
-  console.log(`→ ${days.length} days, ${total} assignments (from ${cutoff} onward)`);
+  console.log(`→ FY ${fy.label}: ${days.length} days, ${total} assignments`);
 
   const out = {
     _generatedAt: new Date().toISOString(),
     person: "Alex",
     displayTimeZone: DISPLAY_TZ,
+    fiscalYear: { start: fy.start, end: fy.end, label: fy.label },
     calendars: CALENDARS.map(({ id, label, color, color2 }) => ({ id, label, color, color2 })),
     days,
   };
   const outPath = join(__dirname, "..", "schedule.json");
   writeFileSync(outPath, JSON.stringify(out, null, 2) + "\n");
   console.log(`→ wrote ${outPath}`);
-}
-
-function prevISO(iso) {
-  const [y, mo, d] = iso.split("-").map(Number);
-  const dt = new Date(Date.UTC(y, mo - 1, d - 1));
-  return `${dt.getUTCFullYear()}-${pad(dt.getUTCMonth() + 1)}-${pad(dt.getUTCDate())}`;
 }
 
 main().catch((err) => { console.error("✗", err.message); process.exit(1); });

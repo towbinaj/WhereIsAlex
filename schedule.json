@@ -1,7 +1,12 @@
 {
-  "_generatedAt": "2026-07-06T02:11:14.307Z",
+  "_generatedAt": "2026-07-06T02:46:09.488Z",
   "person": "Alex",
   "displayTimeZone": "America/New_York",
+  "fiscalYear": {
+    "start": "2026-07-01",
+    "end": "2027-06-30",
+    "label": "2026–2027"
+  },
   "calendars": [
     {
       "id": "qgenda",
@@ -11,52 +16,6 @@
     }
   ],
   "days": [
-    {
-      "date": "2026-06-29",
-      "assignments": [
-        {
-          "calendar": "qgenda",
-          "date": "2026-06-29",
-          "title": "Trunk 2 (M-F)",
-          "location": "",
-          "notes": "",
-          "allDay": false,
-          "startTime": "1000",
-          "endTime": "1800",
-          "uid": "ede79cad-9223-4d6f-8a0b-16316077fcb5",
-          "category": "clinical"
-        }
-      ]
-    },
-    {
-      "date": "2026-06-30",
-      "assignments": [
-        {
-          "calendar": "qgenda",
-          "date": "2026-06-30",
-          "title": "JEOPARDY",
-          "location": "",
-          "notes": "",
-          "allDay": true,
-          "startTime": null,
-          "endTime": null,
-          "uid": "ae92f8d0-33e7-4040-9ecf-c0a86dd19ff1",
-          "category": "call"
-        },
-        {
-          "calendar": "qgenda",
-          "date": "2026-06-30",
-          "title": "US",
-          "location": "",
-          "notes": "",
-          "allDay": false,
-          "startTime": "0745",
-          "endTime": "1700",
-          "uid": "faa7742a-290c-44c8-b750-24744c51613b",
-          "category": "clinical"
-        }
-      ]
-    },
     {
       "date": "2026-07-01",
       "assignments": [
@@ -998,7 +957,7 @@
           "startTime": "0700",
           "endTime": "1430",
           "uid": "e61f3131-7a84-40f1-9c93-95f046a7642c",
-          "category": "away"
+          "category": "call"
         },
         {
           "calendar": "qgenda",
@@ -1027,7 +986,7 @@
           "startTime": "0700",
           "endTime": "1430",
           "uid": "26df2763-5a63-492f-9873-4fe710f2e421",
-          "category": "away"
+          "category": "call"
         },
         {
           "calendar": "qgenda",
@@ -1565,7 +1524,7 @@
           "startTime": null,
           "endTime": null,
           "uid": "57a9806c-a3dd-4821-be12-65843ef4f74c",
-          "category": "away"
+          "category": "call"
         },
         {
           "calendar": "qgenda",
@@ -1577,7 +1536,7 @@
           "startTime": "0700",
           "endTime": "1430",
           "uid": "c64bb56c-7490-4e61-a8a6-2e118b70c22a",
-          "category": "away"
+          "category": "call"
         },
         {
           "calendar": "qgenda",
@@ -1606,7 +1565,7 @@
           "startTime": null,
           "endTime": null,
           "uid": "4ecfed3b-8726-4d48-b68a-a5438fe3a774",
-          "category": "away"
+          "category": "call"
         },
         {
           "calendar": "qgenda",
@@ -1618,7 +1577,7 @@
           "startTime": "0700",
           "endTime": "1430",
           "uid": "a4fe382a-9d3d-4773-9387-e39f5dcc1078",
-          "category": "away"
+          "category": "call"
         },
         {
           "calendar": "qgenda",
@@ -1659,7 +1618,7 @@
           "startTime": null,
           "endTime": null,
           "uid": "ef03ac50-5c76-4dea-bf20-fbdf295a9199",
-          "category": "away"
+          "category": "call"
         },
         {
           "calendar": "qgenda",
@@ -1671,7 +1630,7 @@
           "startTime": "0700",
           "endTime": "1430",
           "uid": "200e873b-d29c-4752-a3f7-7bf67d335e51",
-          "category": "away"
+          "category": "call"
         },
         {
           "calendar": "qgenda",
@@ -2046,7 +2005,7 @@
           "startTime": "0700",
           "endTime": "1430",
           "uid": "7be3f4b5-63c8-4f81-8b07-dd7b7510c8cb",
-          "category": "away"
+          "category": "call"
         },
         {
           "calendar": "qgenda",
@@ -2178,6 +2137,23 @@
           "endTime": null,
           "uid": "9049462f-f549-417d-9c56-a736af081882",
           "category": "away"
+        }
+      ]
+    },
+    {
+      "date": "2027-06-28",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2027-06-28",
+          "title": "Eve 1",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1500",
+          "endTime": "2200",
+          "uid": "f583a568-7e17-4d7c-8c04-84b747a53ec8",
+          "category": "call"
         }
       ]
     }

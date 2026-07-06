@@ -60,6 +60,14 @@ The `qgenda` entry in `CALENDARS` (top of `scripts/build-schedule.js`) has a few
 - **`staff`** picks whose entries to keep out of the department schedule.
 - **`hideTasks`** removes pure call-pool / bookkeeping labels that don't say where Alex actually is. Leave empty to show everything.
 
+### Fiscal year & views
+
+The build fetches the **current fiscal year (Jul 1 – Jun 30)** in one shot — QGenda serves past schedule data, so elapsed months stay in `schedule.json` alongside upcoming ones. The page then slices that data three ways:
+
+- **Upcoming list** + **Jump to…** — near-term only (`LIST_HORIZON_DAYS` in `app.js`, ~6 weeks).
+- **Days off** button — every upcoming day off across the whole year, as merged date ranges.
+- **Year stats** button (footer) — a fiscal-year shift tally by category and label, with a running "done" count for shifts already elapsed.
+
 ### Assignment icons
 
 Each assignment gets a category icon: **clinical** (pulse), **conference** (people), **call** (phone), **office** (briefcase), **away** (sun). Categories are assigned in `scripts/build-schedule.js` — `TASK_CATEGORIES` maps known labels exactly, and `CATEGORY_KEYWORDS` is an ordered keyword fallback so new/unseen labels still get sorted. To reclassify a label, edit the map.
