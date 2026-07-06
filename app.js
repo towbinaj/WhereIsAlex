@@ -72,7 +72,7 @@ const ICON_CLOCK = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" s
 
 // Category icons — clinical | conference | call | office | away.
 const CAT_ICONS = {
-  clinical:   `<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>`, // pulse / activity
+  clinical:   `<path d="M12 4v15"/><path d="M12 8c3.6 0 6.5 2.4 6.5 6"/><path d="M12 8c-3.6 0-6.5 2.4-6.5 6"/><path d="M12 12c2.8 0 5 2 5 4.6"/><path d="M12 12c-2.8 0-5 2-5 4.6"/>`, // chest x-ray (ribcage)
   conference: `<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>`, // people
   call:       `<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>`, // phone
   office:     `<rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>`, // briefcase
