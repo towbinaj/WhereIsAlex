@@ -125,6 +125,7 @@ const DEFAULT_CATEGORY = "clinical";
 // it just reads like any ordinary day off.
 const RELABEL_TASKS = {
   "vacation": "Off",
+  "meeting": "Off",
 };
 function relabelTask(title) {
   return RELABEL_TASKS[String(title || "").trim().toLowerCase()] || title;

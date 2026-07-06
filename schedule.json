@@ -1,5 +1,5 @@
 {
-  "_generatedAt": "2026-07-03T20:43:18.064Z",
+  "_generatedAt": "2026-07-06T01:56:04.332Z",
   "person": "Alex",
   "displayTimeZone": "America/New_York",
   "calendars": [
@@ -400,7 +400,7 @@
         {
           "calendar": "qgenda",
           "date": "2026-07-24",
-          "title": "MEETING",
+          "title": "Off",
           "location": "",
           "notes": "",
           "allDay": false,
@@ -451,7 +451,7 @@
         {
           "calendar": "qgenda",
           "date": "2026-07-29",
-          "title": "MEETING",
+          "title": "Off",
           "location": "",
           "notes": "",
           "allDay": false,
@@ -468,7 +468,7 @@
         {
           "calendar": "qgenda",
           "date": "2026-07-30",
-          "title": "MEETING",
+          "title": "Off",
           "location": "",
           "notes": "",
           "allDay": false,
@@ -633,7 +633,7 @@
         {
           "calendar": "qgenda",
           "date": "2026-08-17",
-          "title": "MEETING",
+          "title": "Off",
           "location": "",
           "notes": "",
           "allDay": false,
@@ -650,7 +650,7 @@
         {
           "calendar": "qgenda",
           "date": "2026-08-18",
-          "title": "MEETING",
+          "title": "Off",
           "location": "",
           "notes": "",
           "allDay": false,
@@ -679,7 +679,7 @@
         {
           "calendar": "qgenda",
           "date": "2026-08-19",
-          "title": "MEETING",
+          "title": "Off",
           "location": "",
           "notes": "",
           "allDay": false,
@@ -696,7 +696,7 @@
         {
           "calendar": "qgenda",
           "date": "2026-08-20",
-          "title": "MEETING",
+          "title": "Off",
           "location": "",
           "notes": "",
           "allDay": false,
@@ -713,7 +713,7 @@
         {
           "calendar": "qgenda",
           "date": "2026-08-21",
-          "title": "MEETING",
+          "title": "Off",
           "location": "",
           "notes": "",
           "allDay": false,
@@ -721,35 +721,6 @@
           "endTime": "1700",
           "uid": "37f4c505-b1d1-41c2-8587-fae88a023449",
           "category": "away"
-        }
-      ]
-    },
-    {
-      "date": "2026-08-24",
-      "assignments": [
-        {
-          "calendar": "qgenda",
-          "date": "2026-08-24",
-          "title": "Eve 3",
-          "location": "",
-          "notes": "",
-          "allDay": false,
-          "startTime": "1600",
-          "endTime": "2300",
-          "uid": "d6ae9d8a-3308-4973-87e0-53c0e8aab526",
-          "category": "call"
-        },
-        {
-          "calendar": "qgenda",
-          "date": "2026-08-24",
-          "title": "Overnight Beeper",
-          "location": "",
-          "notes": "",
-          "allDay": false,
-          "startTime": "2200",
-          "endTime": "0700",
-          "uid": "d76f1c74-a251-4d6e-b39a-0993b214a9ba",
-          "category": "call"
         }
       ]
     },
@@ -767,30 +738,6 @@
           "endTime": "1300",
           "uid": "afe544ca-f402-4dbe-8b9c-95290101f306",
           "category": "conference"
-        },
-        {
-          "calendar": "qgenda",
-          "date": "2026-08-25",
-          "title": "Eve 3",
-          "location": "",
-          "notes": "",
-          "allDay": false,
-          "startTime": "1600",
-          "endTime": "2300",
-          "uid": "432f3e22-dba7-4eb7-ba4e-73a4ae07ec54",
-          "category": "call"
-        },
-        {
-          "calendar": "qgenda",
-          "date": "2026-08-25",
-          "title": "Overnight Beeper",
-          "location": "",
-          "notes": "",
-          "allDay": false,
-          "startTime": "2200",
-          "endTime": "0700",
-          "uid": "61dc69ff-4bfb-4798-b5db-3a70895908b4",
-          "category": "call"
         }
       ]
     },
