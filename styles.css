@@ -395,33 +395,38 @@ html, body {
 
 /* ------- FOOTER ------- */
 .footer {
-  padding: 0.8rem 1.25rem 1.6rem;
+  padding: 1rem 1.25rem 1.6rem;
   font-family: var(--mono);
   font-size: 0.62rem;
   letter-spacing: 0.16em;
   color: var(--ink-faint);
   text-transform: uppercase;
+  position: relative;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 0.7rem;
+  justify-content: center;
+  min-height: 40px;
 }
 .footer__updated:empty { display: none; }
 
 .footer__stats {
-  width: 40px;
-  height: 40px;
+  position: absolute;
+  right: 1.25rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
   background: transparent;
-  border: 1px solid var(--ink);
-  color: var(--ink);
+  border: 1px solid var(--ink-faint);
+  color: var(--ink-faint);
   display: grid;
   place-items: center;
   cursor: pointer;
-  transition: background .18s, color .18s;
+  transition: color .18s, border-color .18s;
 }
-.footer__stats:hover { background: var(--ink); color: var(--paper); }
-.footer__stats svg { width: 18px; height: 18px; }
+.footer__stats:hover { color: var(--ink-soft); border-color: var(--ink-soft); }
+.footer__stats svg { width: 16px; height: 16px; }
 
 /* ------- STATS DIALOG ------- */
 .stats__sub {
