@@ -1,5 +1,5 @@
 {
-  "_generatedAt": "2026-07-06T01:56:04.332Z",
+  "_generatedAt": "2026-07-06T02:11:14.307Z",
   "person": "Alex",
   "displayTimeZone": "America/New_York",
   "calendars": [
@@ -948,6 +948,1236 @@
           "endTime": null,
           "uid": "5407cb03-2443-4dba-a78c-f9ec8dde1949",
           "category": "call"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-07",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-09-07",
+          "title": "Observed Holiday",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "471c8153-d725-468f-9936-46e87c14e844",
+          "category": "away"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-08",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-09-08",
+          "title": "Solid Tumor Board",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1200",
+          "endTime": "1300",
+          "uid": "0238ab33-3b42-47bc-aaae-e073acb5cf0e",
+          "category": "conference"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-09-12",
+          "title": "Weekend/Holiday EARLY",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "0700",
+          "endTime": "1430",
+          "uid": "e61f3131-7a84-40f1-9c93-95f046a7642c",
+          "category": "away"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-09-12",
+          "title": "OPL WE/HOL Beeper",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1430",
+          "endTime": "1700",
+          "uid": "a10ac6ff-81c4-4be6-a063-403b65d74c88",
+          "category": "call"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-13",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-09-13",
+          "title": "Weekend/Holiday EARLY",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "0700",
+          "endTime": "1430",
+          "uid": "26df2763-5a63-492f-9873-4fe710f2e421",
+          "category": "away"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-09-13",
+          "title": "OPL WE/HOL Beeper",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1430",
+          "endTime": "1700",
+          "uid": "b443a2f2-3e77-4c15-8325-61e74793e1a4",
+          "category": "call"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-15",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-09-15",
+          "title": "Solid Tumor Board",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1200",
+          "endTime": "1300",
+          "uid": "64ddf8eb-1521-4c83-ab72-e1340a386398",
+          "category": "conference"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-22",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-09-22",
+          "title": "Solid Tumor Board",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1200",
+          "endTime": "1300",
+          "uid": "995f2c9f-6953-408b-a510-e4a458322e61",
+          "category": "conference"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-29",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-09-29",
+          "title": "Solid Tumor Board",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1200",
+          "endTime": "1300",
+          "uid": "ac3dc189-297e-4fac-bd99-82aa80c7020b",
+          "category": "conference"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-05",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-10-05",
+          "title": "Off",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "0730",
+          "endTime": "1700",
+          "uid": "bb1f5ae8-fa77-4210-8cf7-74b8fa10c758",
+          "category": "away"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-10-06",
+          "title": "Off",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "0730",
+          "endTime": "1700",
+          "uid": "6e50a41a-5501-4ac4-8743-2b1a24a05990",
+          "category": "away"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-07",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-10-07",
+          "title": "Off",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "0730",
+          "endTime": "1700",
+          "uid": "f53536f1-c05a-4a3f-bb20-a53efd23442b",
+          "category": "away"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-08",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-10-08",
+          "title": "Off",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "0730",
+          "endTime": "1700",
+          "uid": "49b40356-08f6-4dcc-80b2-12cd3169175c",
+          "category": "away"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-09",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-10-09",
+          "title": "Off",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "0730",
+          "endTime": "1700",
+          "uid": "4a32f3ab-f675-4c3f-b221-9e064be2e3eb",
+          "category": "away"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-10-16",
+          "title": "Eve 1",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1500",
+          "endTime": "2200",
+          "uid": "fe057c51-4372-4a24-8ef2-b1e5f3f6d495",
+          "category": "call"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-19",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-10-19",
+          "title": "Eve 3",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1600",
+          "endTime": "2300",
+          "uid": "2813cc08-d55d-44fb-9f7f-6121cd1cd727",
+          "category": "call"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-10-19",
+          "title": "Overnight Beeper",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "2200",
+          "endTime": "0700",
+          "uid": "3ed2e553-55a1-4ccf-8e57-7bec7ec6a1d9",
+          "category": "call"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-20",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-10-20",
+          "title": "Eve 3",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1600",
+          "endTime": "2300",
+          "uid": "25fa4dee-6db0-4950-b3ab-cec1303704dd",
+          "category": "call"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-10-20",
+          "title": "Overnight Beeper",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "2200",
+          "endTime": "0700",
+          "uid": "7a64ee51-a925-4198-999a-ac69492bbe71",
+          "category": "call"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-24",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-10-24",
+          "title": "Weekend Mid",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1200",
+          "endTime": "1700",
+          "uid": "b77fc540-8db8-4966-8c40-218ce768f371",
+          "category": "clinical"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-25",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-10-25",
+          "title": "Weekend Mid",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1200",
+          "endTime": "1700",
+          "uid": "8a71aabf-b90a-4e83-8187-ce8080ec120d",
+          "category": "clinical"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-30",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-10-30",
+          "title": "Eve 1",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1500",
+          "endTime": "2200",
+          "uid": "73f0e6a2-1433-49fc-8eb3-30878100ecf3",
+          "category": "call"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-11",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-11-11",
+          "title": "Eve 1",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1500",
+          "endTime": "2200",
+          "uid": "601bc00c-acd7-4513-a92b-1351753a765d",
+          "category": "call"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-16",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-11-16",
+          "title": "Eve 1",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1500",
+          "endTime": "2200",
+          "uid": "f0d730f3-6fe6-47cb-82f4-f9c7209137b4",
+          "category": "call"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-17",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-11-17",
+          "title": "OFFICE",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "3fff989f-b8d7-42f4-8d39-c7d37f7f9e13",
+          "category": "office"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-26",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-11-26",
+          "title": "Observed Holiday",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "f7080377-0491-46d8-a047-86d53f9e4df5",
+          "category": "away"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-27",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-11-27",
+          "title": "Off",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "644b0b3a-8142-4a60-83b4-6e1f79f5e88b",
+          "category": "away"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-30",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-11-30",
+          "title": "Off",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "0730",
+          "endTime": "1700",
+          "uid": "92df6042-cfbe-4730-a616-4c139010b887",
+          "category": "away"
+        }
+      ]
+    },
+    {
+      "date": "2026-12-01",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-12-01",
+          "title": "Off",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "0730",
+          "endTime": "1700",
+          "uid": "461206d1-021d-4a16-beec-34f3bbedaa95",
+          "category": "away"
+        }
+      ]
+    },
+    {
+      "date": "2026-12-02",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-12-02",
+          "title": "Off",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "0730",
+          "endTime": "1700",
+          "uid": "a8853e39-7ae4-4690-816a-8bec63a841c3",
+          "category": "away"
+        }
+      ]
+    },
+    {
+      "date": "2026-12-03",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-12-03",
+          "title": "Off",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "0730",
+          "endTime": "1700",
+          "uid": "54a454df-3091-450c-8fe8-525df1111d06",
+          "category": "away"
+        }
+      ]
+    },
+    {
+      "date": "2026-12-21",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-12-21",
+          "title": "Eve 1",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1500",
+          "endTime": "2200",
+          "uid": "eca17852-6621-4a09-b68d-895a651c7ea0",
+          "category": "call"
+        }
+      ]
+    },
+    {
+      "date": "2026-12-24",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-12-24",
+          "title": "Observed Holiday",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "216b959e-4310-4fff-9403-cf87fb2b287d",
+          "category": "away"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-12-24",
+          "title": "Holiday Late",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "ef8a4fc4-7e3f-4c6b-9344-2218ae1c9637",
+          "category": "call"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-12-24",
+          "title": "OPL WE/HOL Beeper",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "0830",
+          "endTime": "1430",
+          "uid": "d6db0d0e-7656-4bf9-9b5d-00a4a9ad5aaf",
+          "category": "call"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-12-24",
+          "title": "Weekend/Holiday LATE",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1430",
+          "endTime": "2200",
+          "uid": "c127844b-082d-4801-a487-b378f112cb48",
+          "category": "call"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-12-24",
+          "title": "Overnight Beeper",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "2200",
+          "endTime": "0700",
+          "uid": "29e49aaa-9293-4623-8598-71f2e24f4aa3",
+          "category": "call"
+        }
+      ]
+    },
+    {
+      "date": "2026-12-25",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-12-25",
+          "title": "Observed Holiday",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "e772e239-36df-41cf-87fd-044dc4987f17",
+          "category": "away"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-12-25",
+          "title": "Holiday Early",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "57a9806c-a3dd-4821-be12-65843ef4f74c",
+          "category": "away"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-12-25",
+          "title": "Weekend/Holiday EARLY",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "0700",
+          "endTime": "1430",
+          "uid": "c64bb56c-7490-4e61-a8a6-2e118b70c22a",
+          "category": "away"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-12-25",
+          "title": "OPL WE/HOL Beeper",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1430",
+          "endTime": "1700",
+          "uid": "04f8f7de-9bab-476f-ae10-69df3543d07e",
+          "category": "call"
+        }
+      ]
+    },
+    {
+      "date": "2026-12-26",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-12-26",
+          "title": "Holiday Early",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "4ecfed3b-8726-4d48-b68a-a5438fe3a774",
+          "category": "away"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-12-26",
+          "title": "Weekend/Holiday EARLY",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "0700",
+          "endTime": "1430",
+          "uid": "a4fe382a-9d3d-4773-9387-e39f5dcc1078",
+          "category": "away"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-12-26",
+          "title": "OPL WE/HOL Beeper",
+          "location": "",
+          "notes": "fluoro backup for JD ML pay 230p-10",
+          "allDay": false,
+          "startTime": "0700",
+          "endTime": "2200",
+          "uid": "956e9377-6640-43bf-b264-be8fd593564a",
+          "category": "call"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-12-26",
+          "title": "Moonlighting shift",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1430",
+          "endTime": "2200",
+          "uid": "3f141f55-346c-4d02-8a61-1769a2942365",
+          "category": "clinical"
+        }
+      ]
+    },
+    {
+      "date": "2026-12-27",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-12-27",
+          "title": "Holiday Early",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "ef03ac50-5c76-4dea-bf20-fbdf295a9199",
+          "category": "away"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-12-27",
+          "title": "Weekend/Holiday EARLY",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "0700",
+          "endTime": "1430",
+          "uid": "200e873b-d29c-4752-a3f7-7bf67d335e51",
+          "category": "away"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-12-27",
+          "title": "OPL WE/HOL Beeper",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1430",
+          "endTime": "1700",
+          "uid": "1997deda-0378-4cf9-80ef-67b57bf7740b",
+          "category": "call"
+        }
+      ]
+    },
+    {
+      "date": "2027-01-01",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2027-01-01",
+          "title": "Observed Holiday",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "3ba75f81-3c63-41ea-a834-28c2f90e37b4",
+          "category": "away"
+        }
+      ]
+    },
+    {
+      "date": "2027-01-18",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2027-01-18",
+          "title": "Observed Holiday",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "9578dc46-aa9e-40d3-bc79-4a828104e4e4",
+          "category": "away"
+        }
+      ]
+    },
+    {
+      "date": "2027-01-25",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2027-01-25",
+          "title": "Eve 1",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1500",
+          "endTime": "2200",
+          "uid": "c1850b96-6805-40e4-9d9d-7ca75fe7c5ed",
+          "category": "call"
+        }
+      ]
+    },
+    {
+      "date": "2027-02-01",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2027-02-01",
+          "title": "Eve 1",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1500",
+          "endTime": "2200",
+          "uid": "fbbc6e97-070d-4f9e-af26-19da3c2706eb",
+          "category": "call"
+        }
+      ]
+    },
+    {
+      "date": "2027-02-06",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2027-02-06",
+          "title": "OPL WE/HOL Beeper",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "0830",
+          "endTime": "1430",
+          "uid": "a97cefa3-a325-4945-b7a5-7d7f6244c6a1",
+          "category": "call"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2027-02-06",
+          "title": "Weekend/Holiday LATE",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1430",
+          "endTime": "2200",
+          "uid": "dea636a2-4c70-452d-a0be-43ae02c43efa",
+          "category": "call"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2027-02-06",
+          "title": "Overnight Beeper",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "2200",
+          "endTime": null,
+          "uid": "8396a0c4-9b87-4d46-8a91-25628fb0409d",
+          "category": "call"
+        }
+      ]
+    },
+    {
+      "date": "2027-02-07",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2027-02-07",
+          "title": "OPL WE/HOL Beeper",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "0830",
+          "endTime": "1430",
+          "uid": "4f40dd13-4455-4e05-ad6c-453ba193e8c0",
+          "category": "call"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2027-02-07",
+          "title": "Weekend/Holiday LATE",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1430",
+          "endTime": "2200",
+          "uid": "d6c5f1ed-1e31-4086-988f-25ed3f8b52db",
+          "category": "call"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2027-02-07",
+          "title": "Overnight Beeper",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "2200",
+          "endTime": null,
+          "uid": "e5035de3-abda-43bc-ac37-46566ac19579",
+          "category": "call"
+        }
+      ]
+    },
+    {
+      "date": "2027-02-18",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2027-02-18",
+          "title": "Off",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "0730",
+          "endTime": "1700",
+          "uid": "cd06d04b-4007-4013-b877-c701e50eb16d",
+          "category": "away"
+        }
+      ]
+    },
+    {
+      "date": "2027-02-19",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2027-02-19",
+          "title": "Off",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "0730",
+          "endTime": "1700",
+          "uid": "e5f20d81-3af3-436c-a874-ef8daf44fe12",
+          "category": "away"
+        }
+      ]
+    },
+    {
+      "date": "2027-03-08",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2027-03-08",
+          "title": "Eve 3",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1600",
+          "endTime": "2300",
+          "uid": "465538cc-432d-441c-a1bd-0e433f12aa06",
+          "category": "call"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2027-03-08",
+          "title": "Overnight Beeper",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "2200",
+          "endTime": "0700",
+          "uid": "bd723317-56b8-4af6-9a68-e7038f4fa92f",
+          "category": "call"
+        }
+      ]
+    },
+    {
+      "date": "2027-03-09",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2027-03-09",
+          "title": "Eve 3",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1600",
+          "endTime": "2300",
+          "uid": "2410c997-159c-4478-b935-af93e3f3d7aa",
+          "category": "call"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2027-03-09",
+          "title": "Overnight Beeper",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "2200",
+          "endTime": "0700",
+          "uid": "6025bd45-be8f-4f47-ab0f-457cde8693d8",
+          "category": "call"
+        }
+      ]
+    },
+    {
+      "date": "2027-03-10",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2027-03-10",
+          "title": "Eve 3",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1600",
+          "endTime": "2300",
+          "uid": "d8ce6e8d-2c2e-48cf-b2ab-10a5ba5f9163",
+          "category": "call"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2027-03-10",
+          "title": "Overnight Beeper",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "2200",
+          "endTime": "0700",
+          "uid": "749eb3d1-f0f0-4157-bd38-9068822f0c14",
+          "category": "call"
+        }
+      ]
+    },
+    {
+      "date": "2027-03-11",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2027-03-11",
+          "title": "Eve 3",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1600",
+          "endTime": "2300",
+          "uid": "5e89851d-dad6-4f25-b435-47a450bf4d49",
+          "category": "call"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2027-03-11",
+          "title": "Overnight Beeper",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "2200",
+          "endTime": "0700",
+          "uid": "461cbef5-8a6d-4e33-873e-12b849d8695e",
+          "category": "call"
+        }
+      ]
+    },
+    {
+      "date": "2027-03-12",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2027-03-12",
+          "title": "Eve 3",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1600",
+          "endTime": "2300",
+          "uid": "5838acd3-7116-4498-b769-842c7c3ff23e",
+          "category": "call"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2027-03-12",
+          "title": "Overnight Beeper",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "2200",
+          "endTime": "0700",
+          "uid": "ec479139-3c47-43a7-937b-35a5752f278d",
+          "category": "call"
+        }
+      ]
+    },
+    {
+      "date": "2027-03-22",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2027-03-22",
+          "title": "Eve 1",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1500",
+          "endTime": "2200",
+          "uid": "43a64b97-5f4e-4e2c-a6ae-afffce11b630",
+          "category": "call"
+        }
+      ]
+    },
+    {
+      "date": "2027-04-11",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2027-04-11",
+          "title": "Weekend/Holiday EARLY",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "0700",
+          "endTime": "1430",
+          "uid": "7be3f4b5-63c8-4f81-8b07-dd7b7510c8cb",
+          "category": "away"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2027-04-11",
+          "title": "OPL WE/HOL Beeper",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1430",
+          "endTime": "1700",
+          "uid": "60f33145-3f00-4849-92a8-df9befb0cc63",
+          "category": "call"
+        }
+      ]
+    },
+    {
+      "date": "2027-05-12",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2027-05-12",
+          "title": "Eve 1",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1500",
+          "endTime": "2200",
+          "uid": "800971a7-e7ed-4aa1-9836-43752ca0f6b8",
+          "category": "call"
+        }
+      ]
+    },
+    {
+      "date": "2027-05-31",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2027-05-31",
+          "title": "Observed Holiday",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "b0ca0b18-d637-4132-be6f-4ff392d41e3a",
+          "category": "away"
+        }
+      ]
+    },
+    {
+      "date": "2027-06-04",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2027-06-04",
+          "title": "Eve 1",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1500",
+          "endTime": "2200",
+          "uid": "c6018e2e-e6b1-4379-af39-ec2b3b9d7904",
+          "category": "call"
+        }
+      ]
+    },
+    {
+      "date": "2027-06-09",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2027-06-09",
+          "title": "Eve 1",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1500",
+          "endTime": "2200",
+          "uid": "cdd11424-c5b3-4659-b0b3-2c02332af97d",
+          "category": "call"
+        }
+      ]
+    },
+    {
+      "date": "2027-06-12",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2027-06-12",
+          "title": "Weekend Mid",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1200",
+          "endTime": "1700",
+          "uid": "99d38e81-3047-4a6e-8f44-64c1d86c3bd0",
+          "category": "clinical"
+        }
+      ]
+    },
+    {
+      "date": "2027-06-13",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2027-06-13",
+          "title": "Weekend Mid",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1200",
+          "endTime": "1700",
+          "uid": "870c3164-c3f5-461e-b5f5-1ea7a4f431e3",
+          "category": "clinical"
+        }
+      ]
+    },
+    {
+      "date": "2027-06-18",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2027-06-18",
+          "title": "Observed Holiday",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "9049462f-f549-417d-9c56-a736af081882",
+          "category": "away"
         }
       ]
     }

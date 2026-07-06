@@ -42,6 +42,7 @@
     </a>
     <nav class="masthead__nav">
       <button class="nav-btn" id="todayBtn">Today</button>
+      <button class="nav-btn" id="offBtn">Days off</button>
       <button class="nav-btn" id="jumpBtn">Jump to&hellip;</button>
       <button class="theme-toggle" id="themeBtn" aria-label="Toggle theme" title="Toggle paper / ink">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -66,6 +67,14 @@
   <footer class="footer">
     <span class="footer__updated" id="lastUpdated"></span>
   </footer>
+
+  <dialog class="jumper" id="offDialog">
+    <form method="dialog">
+      <h3>Upcoming days off</h3>
+      <ul class="jumper__list" id="offList"></ul>
+      <button class="jumper__close" type="submit">Close</button>
+    </form>
+  </dialog>
 
   <dialog class="jumper" id="jumperDialog">
     <form method="dialog">

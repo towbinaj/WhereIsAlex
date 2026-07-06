@@ -72,7 +72,7 @@ const ICON_CLOCK = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" s
 
 // Category icons — clinical | conference | call | office | away.
 const CAT_ICONS = {
-  clinical:   `<path d="M12 4v15"/><path d="M12 8c3.6 0 6.5 2.4 6.5 6"/><path d="M12 8c-3.6 0-6.5 2.4-6.5 6"/><path d="M12 12c2.8 0 5 2 5 4.6"/><path d="M12 12c-2.8 0-5 2-5 4.6"/>`, // chest x-ray (ribcage)
+  clinical:   `<path d="M17 10c.7-.7 1.69 0 2.5 0a2.5 2.5 0 1 0 0-5 .5.5 0 0 1-.5-.5 2.5 2.5 0 1 0-5 0c0 .81.7 1.8 0 2.5l-7 7c-.7.7-1.69 0-2.5 0a2.5 2.5 0 0 0 0 5c.28 0 .5.22.5.5a2.5 2.5 0 1 0 5 0c0-.81-.7-1.8 0-2.5Z"/>`, // bone
   conference: `<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>`, // people
   call:       `<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>`, // phone
   office:     `<rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>`, // briefcase
@@ -269,6 +269,80 @@ function scrollToDay(date) {
   }
 }
 
+/* ---------- Days off ---------- */
+
+function addDaysISO(iso, n) {
+  const [y, mo, d] = iso.split("-").map(Number);
+  const dt = new Date(Date.UTC(y, mo - 1, d + n));
+  return `${dt.getUTCFullYear()}-${String(dt.getUTCMonth() + 1).padStart(2, "0")}-${String(dt.getUTCDate()).padStart(2, "0")}`;
+}
+
+// A "day off" = an upcoming day carrying an all-day away assignment (Off /
+// Observed Holiday). Timed away items (e.g. an "Off" meeting block) don't count.
+function isOffDay(day) {
+  return day.assignments.some((a) => a.allDay && a.category === "away");
+}
+
+// Collapse consecutive off days into ranges: [{start, end}, …].
+function offRanges() {
+  const dates = days
+    .filter((d) => d.date >= TODAY_STR && isOffDay(d))
+    .map((d) => d.date)
+    .sort();
+  const ranges = [];
+  for (const date of dates) {
+    const last = ranges[ranges.length - 1];
+    if (last && addDaysISO(last.end, 1) === date) last.end = date;
+    else ranges.push({ start: date, end: date });
+  }
+  return ranges;
+}
+
+function fmtOffRange(r) {
+  const s = parseISO(r.start), e = parseISO(r.end);
+  if (r.start === r.end) {
+    return s.toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric" });
+  }
+  const sameMonth = s.getMonth() === e.getMonth() && s.getFullYear() === e.getFullYear();
+  const startStr = s.toLocaleDateString("en-US", { month: "short", day: "numeric" });
+  const endStr = e.toLocaleDateString("en-US", sameMonth ? { day: "numeric" } : { month: "short", day: "numeric" });
+  return `${startStr} – ${endStr}`;
+}
+
+function rangeDayCount(r) {
+  return Math.round((parseISO(r.end) - parseISO(r.start)) / 86400000) + 1;
+}
+
+function populateOffDialog() {
+  const list = document.getElementById("offList");
+  const ranges = offRanges();
+  if (!ranges.length) {
+    list.innerHTML = `<li class="jumper__empty">No upcoming days off scheduled.</li>`;
+    return;
+  }
+  let html = "";
+  let lastMonth = "";
+  for (const r of ranges) {
+    const month = parseISO(r.start).toLocaleDateString("en-US", { month: "long", year: "numeric" });
+    if (month !== lastMonth) { html += `<li class="jumper__month">${month}</li>`; lastMonth = month; }
+    const n = rangeDayCount(r);
+    html += `
+      <li class="jumper__item">
+        <button data-date="${r.start}">
+          <span>${escapeHTML(fmtOffRange(r))}</span>
+          <span class="day-meta">${n} day${n === 1 ? "" : "s"}</span>
+        </button>
+      </li>`;
+  }
+  list.innerHTML = html;
+  list.querySelectorAll("button[data-date]").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      document.getElementById("offDialog").close();
+      scrollToDay(btn.dataset.date);
+    });
+  });
+}
+
 /* ---------- Footer ---------- */
 
 function setLastUpdated(iso) {
@@ -296,6 +370,12 @@ function setupNav() {
       : nextDayWithAssignments(TODAY_STR)?.date;
     if (target) scrollToDay(target);
     window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+
+  const offDialog = document.getElementById("offDialog");
+  document.getElementById("offBtn").addEventListener("click", () => {
+    populateOffDialog();
+    offDialog.showModal();
   });
 
   const dialog = document.getElementById("jumperDialog");

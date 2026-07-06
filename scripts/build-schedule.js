@@ -61,8 +61,9 @@ const CALENDARS = [
     viewUrl: process.env.QGENDA_VIEW_URL,
     // Which staff member to keep — matched against last name or QGenda abbreviation.
     staff: "Towbin",
-    // How many weeks forward to pull.
-    weeks: 10,
+    // How many weeks forward to pull (a full year, so far-in-advance approved
+    // days off show up as soon as they're entered in QGenda).
+    weeks: 52,
     // Assignment labels to drop entirely (pure status / scheduling artifacts
     // that don't say where Alex is). Leave empty to show everything.
     hideTasks: ["No Call", "Request a Shift"],
