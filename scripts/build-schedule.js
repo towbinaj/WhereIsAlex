@@ -84,12 +84,12 @@ const DISPLAY_TZ = "America/New_York";
 // through to the keyword rules, then to the default. To reclassify a label,
 // edit the map; to teach the fallback a new pattern, edit CATEGORY_KEYWORDS.
 const TASK_CATEGORIES = {
-  "us": "clinical",
+  "ultrasound": "clinical",
   "fluoro": "clinical",
   "liberty": "clinical",
-  "trunk 1 (m-f)": "clinical",
-  "trunk 2 (m-f)": "clinical",
-  "resource person": "clinical",
+  "trunk 1": "clinical",
+  "trunk 2": "clinical",
+  "resource": "clinical",
   "solid tumor board": "conference",
   "tuberous sclerosis conf": "conference",
   "overnight beeper": "call",
@@ -125,6 +125,10 @@ const DEFAULT_CATEGORY = "clinical";
 const RELABEL_TASKS = {
   "vacation": "Off",
   "meeting": "Off",
+  "us": "Ultrasound",
+  "resource person": "Resource",
+  "trunk 1 (m-f)": "Trunk 1",
+  "trunk 2 (m-f)": "Trunk 2",
 };
 function relabelTask(title) {
   return RELABEL_TASKS[String(title || "").trim().toLowerCase()] || title;
