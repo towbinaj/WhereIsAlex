@@ -283,10 +283,10 @@ function addDaysISO(iso, n) {
   return `${dt.getUTCFullYear()}-${String(dt.getUTCMonth() + 1).padStart(2, "0")}-${String(dt.getUTCDate()).padStart(2, "0")}`;
 }
 
-// A "day off" = an upcoming day carrying an all-day away assignment (Off /
-// Observed Holiday). Timed away items (e.g. an "Off" meeting block) don't count.
+// A "day off" = an upcoming day QGenda lists as Vacation or Meeting (both
+// relabeled to "Off"). Observed Holidays are intentionally excluded.
 function isOffDay(day) {
-  return day.assignments.some((a) => a.allDay && a.category === "away");
+  return day.assignments.some((a) => a.title === "Off");
 }
 
 // Collapse consecutive off days into ranges: [{start, end}, …].
