@@ -95,7 +95,7 @@ const TASK_CATEGORIES = {
   "overnight beeper": "call",
   "eve 1": "call",
   "eve 3": "call",
-  "opl we/hol beeper": "call",
+  "weekend beeper": "call",
   "weekend mid": "call",
   "moonlighting shift": "call",
   "weekend/holiday late": "call",
@@ -129,6 +129,11 @@ const RELABEL_TASKS = {
   "resource person": "Resource",
   "trunk 1 (m-f)": "Trunk 1",
   "trunk 2 (m-f)": "Trunk 2",
+  "jeopardy": "Jeopardy",
+  "office": "Office",
+  "opl we/hol beeper": "Weekend Beeper",
+  "weekend/holiday early": "Weekend/Holiday Early",
+  "weekend/holiday late": "Weekend/Holiday Late",
 };
 function relabelTask(title) {
   return RELABEL_TASKS[String(title || "").trim().toLowerCase()] || title;
