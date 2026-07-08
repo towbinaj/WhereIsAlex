@@ -1,5 +1,5 @@
 {
-  "_generatedAt": "2026-07-07T10:01:50.419Z",
+  "_generatedAt": "2026-07-08T16:37:06.094Z",
   "person": "Alex",
   "displayTimeZone": "America/New_York",
   "fiscalYear": {
@@ -684,8 +684,37 @@
       ]
     },
     {
+      "date": "2026-08-24",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-08-24",
+          "title": "Off",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "0730",
+          "endTime": "1700",
+          "uid": "39c010da-5a31-40ed-afce-83b0b06cdede",
+          "category": "away"
+        }
+      ]
+    },
+    {
       "date": "2026-08-25",
       "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-08-25",
+          "title": "Office",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "dce75188-1c83-4236-9ddb-ed25469225a7",
+          "category": "office"
+        },
         {
           "calendar": "qgenda",
           "date": "2026-08-25",
@@ -1134,6 +1163,23 @@
           "startTime": "0730",
           "endTime": "1700",
           "uid": "4a32f3ab-f675-4c3f-b221-9e064be2e3eb",
+          "category": "away"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-10-12",
+          "title": "Off",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "c7fdb2ec-09b2-4861-9155-edfc6961ae94",
           "category": "away"
         }
       ]
