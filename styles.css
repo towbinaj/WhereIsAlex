@@ -562,6 +562,27 @@ html, body {
   font-weight: 400;
   white-space: nowrap;
 }
+.call-day { padding: 0.75rem 0.25rem; }
+.call-day__date {
+  display: block;
+  font-family: var(--body);
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--ink);
+  margin-bottom: 0.35rem;
+}
+.call-day__shift {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  padding: 0.18rem 0 0.18rem 0.9rem;
+  font-family: var(--body);
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--ink);
+}
+
 .jumper__empty { padding: 1.2rem 0.25rem; color: var(--ink-faint); font-style: italic; }
 .jumper__close {
   background: var(--ink);

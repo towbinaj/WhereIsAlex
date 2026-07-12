@@ -366,16 +366,30 @@ function populateCallDialog() {
     list.innerHTML = `<li class="jumper__empty">No upcoming call shifts scheduled.</li>`;
     return;
   }
+  // Collapse shifts that fall on the same day into one item (shifts arrive
+  // already sorted by date), so a day with two call shifts reads as one row.
+  const byDate = [];
+  for (const { date, assignment } of shifts) {
+    const last = byDate[byDate.length - 1];
+    if (last && last.date === date) last.shifts.push(assignment);
+    else byDate.push({ date, shifts: [assignment] });
+  }
+
   let html = "";
   let lastMonth = "";
-  for (const { date, assignment } of shifts) {
+  for (const { date, shifts: dayShifts } of byDate) {
     const month = parseISO(date).toLocaleDateString("en-US", { month: "long", year: "numeric" });
     if (month !== lastMonth) { html += `<li class="jumper__month">${month}</li>`; lastMonth = month; }
+    const rows = dayShifts.map((a) => `
+          <div class="call-day__shift">
+            <span>${escapeHTML(a.title)}</span>
+            <span class="day-meta">${escapeHTML(fmtTimeRange(a))}</span>
+          </div>`).join("");
     html += `
       <li class="jumper__item">
-        <div class="jumper__row">
-          <span>${escapeHTML(fmtDateShort(date))} · ${escapeHTML(assignment.title)}</span>
-          <span class="day-meta">${escapeHTML(fmtTimeRange(assignment))}</span>
+        <div class="call-day">
+          <span class="call-day__date">${escapeHTML(fmtDateShort(date))}</span>
+          ${rows}
         </div>
       </li>`;
   }
