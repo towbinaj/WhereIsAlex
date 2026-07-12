@@ -41,7 +41,7 @@
       <img src="assets/wordmark.svg" alt="Where's Alex" />
     </a>
     <nav class="masthead__nav">
-      <button class="nav-btn" id="todayBtn">Today</button>
+      <button class="nav-btn" id="callBtn">Call</button>
       <button class="nav-btn" id="offBtn">Days off</button>
       <button class="nav-btn" id="jumpBtn">Jump to&hellip;</button>
       <button class="theme-toggle" id="themeBtn" aria-label="Toggle theme" title="Toggle paper / ink">
@@ -88,6 +88,14 @@
     <form method="dialog">
       <h3>Upcoming days off</h3>
       <ul class="jumper__list" id="offList"></ul>
+      <button class="jumper__close" type="submit">Close</button>
+    </form>
+  </dialog>
+
+  <dialog class="jumper" id="callDialog">
+    <form method="dialog">
+      <h3>Upcoming call</h3>
+      <ul class="jumper__list" id="callList"></ul>
       <button class="jumper__close" type="submit">Close</button>
     </form>
   </dialog>

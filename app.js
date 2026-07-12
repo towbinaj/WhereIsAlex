@@ -343,6 +343,45 @@ function populateOffDialog() {
   list.innerHTML = html;
 }
 
+/* ---------- Call shifts ---------- */
+
+// Upcoming call assignments, flattened to one row per shift and sorted by date.
+// Unlike days off these aren't collapsed into ranges — each call shift is a
+// distinct thing (different task, different hours) worth listing on its own.
+function callShifts() {
+  const shifts = [];
+  for (const d of days) {
+    if (d.date < TODAY_STR) continue;
+    for (const a of d.assignments) {
+      if (a.category === "call") shifts.push({ date: d.date, assignment: a });
+    }
+  }
+  return shifts;
+}
+
+function populateCallDialog() {
+  const list = document.getElementById("callList");
+  const shifts = callShifts();
+  if (!shifts.length) {
+    list.innerHTML = `<li class="jumper__empty">No upcoming call shifts scheduled.</li>`;
+    return;
+  }
+  let html = "";
+  let lastMonth = "";
+  for (const { date, assignment } of shifts) {
+    const month = parseISO(date).toLocaleDateString("en-US", { month: "long", year: "numeric" });
+    if (month !== lastMonth) { html += `<li class="jumper__month">${month}</li>`; lastMonth = month; }
+    html += `
+      <li class="jumper__item">
+        <div class="jumper__row">
+          <span>${escapeHTML(fmtDateShort(date))} · ${escapeHTML(assignment.title)}</span>
+          <span class="day-meta">${escapeHTML(fmtTimeRange(assignment))}</span>
+        </div>
+      </li>`;
+  }
+  list.innerHTML = html;
+}
+
 /* ---------- Year stats (fiscal-year shift tally) ---------- */
 
 const STAT_CATEGORIES = [
@@ -425,11 +464,10 @@ function renderAll() {
 }
 
 function setupNav() {
-  document.getElementById("todayBtn").addEventListener("click", () => {
-    const target = findDay(TODAY_STR)?.assignments.length ? TODAY_STR
-      : nextDayWithAssignments(TODAY_STR)?.date;
-    if (target) scrollToDay(target);
-    window.scrollTo({ top: 0, behavior: "smooth" });
+  const callDialog = document.getElementById("callDialog");
+  document.getElementById("callBtn").addEventListener("click", () => {
+    populateCallDialog();
+    callDialog.showModal();
   });
 
   const offDialog = document.getElementById("offDialog");
