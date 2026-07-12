@@ -1,6 +1,8 @@
 # Where's Alex
 
-A small, fast page that answers one question: **where's Alex right now, and where will Alex be next.** It reads Alex's QGenda work schedule (an iCalendar feed) and shows today's assignment front-and-center, with the days ahead below. Designed as a sibling to the SPARK calendar — same paper/ink theme, IBM Plex + JetBrains Mono type, gradient brand accents.
+A small, fast page that answers one question: **where's Alex right now, and where will Alex be next.** It reads Alex's QGenda work schedule (via the department's public share link) and shows today's assignment front-and-center, with the days ahead below. Designed as a sibling to the SPARK calendar — same paper/ink theme, IBM Plex + JetBrains Mono type, gradient brand accents.
+
+> Maintainer notes — the reverse-engineered QGenda pipeline, local/secret setup, and operational gotchas — are in [`CLAUDE.md`](CLAUDE.md). Read that before a bigger change.
 
 ## How it works
 
@@ -19,9 +21,11 @@ QGenda share link ──► scripts/build-schedule.js ──► schedule.json �
 
 ## Run locally
 
+`npm run build` needs the QGenda share URL in a gitignored `.env` at the repo root — see [Configuring the QGenda source](#configuring-the-qgenda-source). On a fresh machine you must recreate it (the value lives in the `QGENDA_VIEW_URL` GitHub secret, which can't be read back — get the link from QGenda). `npm run serve` works without it.
+
 ```bash
 npm run serve      # static preview at http://localhost:5174
-npm run build      # re-fetch the feed(s) and rebuild schedule.json
+npm run build      # re-fetch QGenda and rebuild schedule.json (needs .env)
 ```
 
 Test the parser against a downloaded `.ics` without hitting the network:
@@ -34,9 +38,12 @@ node scripts/build-schedule.js --file=path/to/downloaded.ics
 
 1. Create a GitHub repo and push these files.
 2. **Settings → Pages** → deploy from the `main` branch, root.
-3. The included workflow (`.github/workflows/refresh-schedule.yml`) rebuilds `schedule.json` hourly and commits it back on change. It runs with the repo's default `GITHUB_TOKEN` — no secrets needed.
+3. Add the `QGENDA_VIEW_URL` **Actions secret** (`gh secret set QGENDA_VIEW_URL`).
+4. The included workflow (`.github/workflows/refresh-schedule.yml`) rebuilds `schedule.json` **twice daily (noon & midnight Eastern)** and commits it back only when the data changed. It pushes with the repo's default `GITHUB_TOKEN`.
 
 The page is marked `noindex` so it stays out of search engines; anyone with the link can view it.
+
+> **Deploy flakes:** GitHub's "pages build and deployment" run sometimes fails with *"Deployment failed, try again later"* — a GitHub-side hiccup, not your files. Just re-run it. See `CLAUDE.md` for this and other operational notes.
 
 ## Configuring the QGenda source
 
