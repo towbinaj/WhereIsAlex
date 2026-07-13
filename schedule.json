@@ -1,5 +1,5 @@
 {
-  "_generatedAt": "2026-07-11T16:22:34.886Z",
+  "_generatedAt": "2026-07-13T16:53:05.256Z",
   "person": "Alex",
   "displayTimeZone": "America/New_York",
   "fiscalYear": {
@@ -1551,18 +1551,6 @@
         {
           "calendar": "qgenda",
           "date": "2026-12-25",
-          "title": "Observed Holiday",
-          "location": "",
-          "notes": "",
-          "allDay": true,
-          "startTime": null,
-          "endTime": null,
-          "uid": "e772e239-36df-41cf-87fd-044dc4987f17",
-          "category": "away"
-        },
-        {
-          "calendar": "qgenda",
-          "date": "2026-12-25",
           "title": "Holiday Early",
           "location": "",
           "notes": "",
@@ -1571,6 +1559,18 @@
           "endTime": null,
           "uid": "57a9806c-a3dd-4821-be12-65843ef4f74c",
           "category": "call"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-12-25",
+          "title": "Observed Holiday",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "e772e239-36df-41cf-87fd-044dc4987f17",
+          "category": "away"
         },
         {
           "calendar": "qgenda",
