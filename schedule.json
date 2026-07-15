@@ -1,5 +1,5 @@
 {
-  "_generatedAt": "2026-07-14T16:34:27.212Z",
+  "_generatedAt": "2026-07-15T16:36:54.763Z",
   "person": "Alex",
   "displayTimeZone": "America/New_York",
   "fiscalYear": {
@@ -1290,6 +1290,23 @@
           "endTime": "1700",
           "uid": "8a71aabf-b90a-4e83-8187-ce8080ec120d",
           "category": "call"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-28",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-10-28",
+          "title": "Office",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "d3a7502e-a302-4de7-b3b2-dfd68fc1e600",
+          "category": "office"
         }
       ]
     },
