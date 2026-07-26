@@ -1,5 +1,5 @@
 {
-  "_generatedAt": "2026-07-25T16:24:00.652Z",
+  "_generatedAt": "2026-07-26T16:25:28.422Z",
   "person": "Alex",
   "displayTimeZone": "America/New_York",
   "fiscalYear": {
@@ -376,13 +376,13 @@
         {
           "calendar": "qgenda",
           "date": "2026-07-27",
-          "title": "Resource",
+          "title": "Liberty",
           "location": "",
           "notes": "",
           "allDay": false,
-          "startTime": "0700",
-          "endTime": "1500",
-          "uid": "34435fac-f6b3-434d-849a-0c4623d7a1aa",
+          "startTime": "0745",
+          "endTime": "1700",
+          "uid": "9b5ad89b-436a-4a4d-849b-0e13289cb903",
           "category": "clinical"
         }
       ]
