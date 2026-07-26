@@ -384,6 +384,26 @@ html, body {
   white-space: pre-line;
 }
 
+.daylist__more {
+  display: block;
+  width: 100%;
+  margin-top: 0.9rem;
+  background: transparent;
+  border: 1px solid var(--rule-strong);
+  color: var(--ink-soft);
+  font-family: var(--body);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 0.7rem 1rem;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background .16s ease, color .16s ease, border-color .16s ease;
+}
+.daylist__more:hover { border-color: var(--ink); color: var(--ink); background: var(--paper); }
+.daylist__more[hidden] { display: none; }
+
 .daylist__empty {
   font-family: var(--body);
   font-style: italic;

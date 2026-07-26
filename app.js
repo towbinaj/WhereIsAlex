@@ -16,11 +16,14 @@ let calendars = [];
 let generatedAt = "";
 let fiscalYear = null;
 let showPast = false;
+let expanded = false;        // Upcoming shows 7 days by default; expand for the rest.
 
-// The main list and Jump-to stay near-term (~6 weeks). Far-future days off
-// live only in the "Days off" button.
+// Upcoming leads with the next week; "Show more" reveals out to ~6 weeks.
+// Far-future days off live only in the "Days off" button.
+const DEFAULT_HORIZON_DAYS = 7;
 const LIST_HORIZON_DAYS = 42;
 function baseHorizon() { return addDaysISO(TODAY_STR, LIST_HORIZON_DAYS); }
+function nearHorizon() { return addDaysISO(TODAY_STR, DEFAULT_HORIZON_DAYS); }
 
 /* ---------- Helpers ---------- */
 
@@ -205,12 +208,38 @@ function dayHTML(d) {
   `;
 }
 
+// Today lives in the hero, so the list starts tomorrow to avoid duplicating it.
+// Future days show out to the near horizon (7 days) until "Show more" is tapped.
+function isVisibleDay(d) {
+  if (!d.assignments.length) return false;
+  if (d.date <= TODAY_STR) return showPast && d.date < TODAY_STR;
+  if (d.date > baseHorizon()) return false;         // far future → Days off / Call
+  return showPast || expanded || d.date <= nearHorizon();
+}
+
 function renderDayList() {
   const list = document.getElementById("daylist");
-  const visible = days.filter((d) => (showPast || d.date >= TODAY_STR) && d.date <= baseHorizon() && d.assignments.length);
+  const visible = days.filter(isVisibleDay);
   list.innerHTML = visible.length
     ? visible.map(dayHTML).join("")
     : `<li class="daylist__empty">No assignments to show${showPast ? "" : " — check back soon"}.</li>`;
+  renderMoreButton();
+}
+
+// A control to reveal (or re-collapse) the days between the 7-day near horizon
+// and the full ~6-week horizon. Hidden when past days are shown (whole timeline
+// is already visible) or when there's nothing beyond the first week.
+function renderMoreButton() {
+  const btn = document.getElementById("daylistMore");
+  if (!btn) return;
+  const beyond = days.filter(
+    (d) => d.assignments.length && d.date > nearHorizon() && d.date <= baseHorizon()
+  ).length;
+  if (showPast || beyond === 0) { btn.hidden = true; return; }
+  btn.hidden = false;
+  btn.textContent = expanded
+    ? "Show less"
+    : `Show ${beyond} more day${beyond === 1 ? "" : "s"}`;
 }
 
 /* ---------- Render: Legend ---------- */
@@ -505,6 +534,11 @@ function setupNav() {
     showPast = !showPast;
     renderDayList();
     populateJumper();
+  });
+
+  document.getElementById("daylistMore").addEventListener("click", () => {
+    expanded = !expanded;
+    renderDayList();
   });
 
   document.getElementById("themeBtn").addEventListener("click", () => {
