@@ -1,5 +1,5 @@
 {
-  "_generatedAt": "2026-07-26T16:25:28.422Z",
+  "_generatedAt": "2026-07-28T16:37:16.549Z",
   "person": "Alex",
   "displayTimeZone": "America/New_York",
   "fiscalYear": {
@@ -575,6 +575,18 @@
         {
           "calendar": "qgenda",
           "date": "2026-08-11",
+          "title": "Office",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "820bfe89-39bd-455b-b69d-a2a2b7c704fe",
+          "category": "office"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-08-11",
           "title": "Solid Tumor Board",
           "location": "",
           "notes": "",
@@ -583,6 +595,57 @@
           "endTime": "1300",
           "uid": "2994819a-9f12-408d-8d75-ad8c63dc6e94",
           "category": "conference"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-12",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-08-12",
+          "title": "Trunk 1",
+          "location": "",
+          "notes": "ok for him to work",
+          "allDay": false,
+          "startTime": "0700",
+          "endTime": "1500",
+          "uid": "cb3a3096-90aa-4fd3-aabc-308e9d6b9441",
+          "category": "clinical"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-13",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-08-13",
+          "title": "Office",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "e91f837f-deb8-4e3f-a8a8-bad4a982be4d",
+          "category": "office"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-14",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-08-14",
+          "title": "Fluoro",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "0730",
+          "endTime": "1700",
+          "uid": "6ef52252-0476-482e-b056-19f699bc2421",
+          "category": "clinical"
         }
       ]
     },
