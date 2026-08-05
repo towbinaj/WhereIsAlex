@@ -1,5 +1,5 @@
 {
-  "_generatedAt": "2026-08-04T16:41:56.907Z",
+  "_generatedAt": "2026-08-05T16:37:56.781Z",
   "person": "Alex",
   "displayTimeZone": "America/New_York",
   "fiscalYear": {
@@ -1713,18 +1713,6 @@
         {
           "calendar": "qgenda",
           "date": "2026-12-26",
-          "title": "Weekend Beeper",
-          "location": "",
-          "notes": "fluoro backup for JD ML pay 230p-10",
-          "allDay": false,
-          "startTime": "0700",
-          "endTime": "2200",
-          "uid": "956e9377-6640-43bf-b264-be8fd593564a",
-          "category": "call"
-        },
-        {
-          "calendar": "qgenda",
-          "date": "2026-12-26",
           "title": "Weekend/Holiday Early",
           "location": "",
           "notes": "",
@@ -1732,6 +1720,18 @@
           "startTime": "0700",
           "endTime": "1430",
           "uid": "a4fe382a-9d3d-4773-9387-e39f5dcc1078",
+          "category": "call"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-12-26",
+          "title": "Weekend Beeper",
+          "location": "",
+          "notes": "fluoro backup for JD ML pay 230p-10",
+          "allDay": false,
+          "startTime": "0700",
+          "endTime": "2200",
+          "uid": "956e9377-6640-43bf-b264-be8fd593564a",
           "category": "call"
         },
         {
