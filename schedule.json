@@ -1,5 +1,5 @@
 {
-  "_generatedAt": "2026-08-05T16:37:56.781Z",
+  "_generatedAt": "2026-08-07T04:43:08.413Z",
   "person": "Alex",
   "displayTimeZone": "America/New_York",
   "fiscalYear": {
@@ -2161,6 +2161,40 @@
           "endTime": "1700",
           "uid": "60f33145-3f00-4849-92a8-df9befb0cc63",
           "category": "call"
+        }
+      ]
+    },
+    {
+      "date": "2027-05-06",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2027-05-06",
+          "title": "Off",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "3c159803-ab42-4d6e-ae58-e512ef569879",
+          "category": "away"
+        }
+      ]
+    },
+    {
+      "date": "2027-05-07",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2027-05-07",
+          "title": "Off",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "5a8d08a4-651f-44e3-956e-8afc47c3dd4f",
+          "category": "away"
         }
       ]
     },
