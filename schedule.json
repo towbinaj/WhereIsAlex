@@ -1,5 +1,5 @@
 {
-  "_generatedAt": "2026-08-07T04:43:08.413Z",
+  "_generatedAt": "2026-08-07T16:21:38.650Z",
   "person": "Alex",
   "displayTimeZone": "America/New_York",
   "fiscalYear": {
@@ -1193,6 +1193,18 @@
           "endTime": "1700",
           "uid": "6e50a41a-5501-4ac4-8743-2b1a24a05990",
           "category": "away"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-10-06",
+          "title": "Solid Tumor Board",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1200",
+          "endTime": "1300",
+          "uid": "063a3b53-21b1-4410-9723-e7961a36da14",
+          "category": "conference"
         }
       ]
     },
@@ -1265,6 +1277,23 @@
       ]
     },
     {
+      "date": "2026-10-13",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-10-13",
+          "title": "Solid Tumor Board",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1200",
+          "endTime": "1300",
+          "uid": "39e3593c-664d-4264-9ddc-826e6a59555c",
+          "category": "conference"
+        }
+      ]
+    },
+    {
       "date": "2026-10-16",
       "assignments": [
         {
@@ -1313,6 +1342,18 @@
     {
       "date": "2026-10-20",
       "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-10-20",
+          "title": "Solid Tumor Board",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1200",
+          "endTime": "1300",
+          "uid": "08e3716a-8651-4212-8e81-497755efc179",
+          "category": "conference"
+        },
         {
           "calendar": "qgenda",
           "date": "2026-10-20",
@@ -1374,6 +1415,23 @@
       ]
     },
     {
+      "date": "2026-10-27",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-10-27",
+          "title": "Solid Tumor Board",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1200",
+          "endTime": "1300",
+          "uid": "6a090dfe-4503-4391-9f45-b661a138f913",
+          "category": "conference"
+        }
+      ]
+    },
+    {
       "date": "2026-10-28",
       "assignments": [
         {
@@ -1404,6 +1462,40 @@
           "endTime": "2200",
           "uid": "73f0e6a2-1433-49fc-8eb3-30878100ecf3",
           "category": "call"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-03",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-11-03",
+          "title": "Solid Tumor Board",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1200",
+          "endTime": "1300",
+          "uid": "02fb9a40-ab13-4902-8120-263b2a18374e",
+          "category": "conference"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-10",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-11-10",
+          "title": "Solid Tumor Board",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1200",
+          "endTime": "1300",
+          "uid": "533c174b-2151-4c5c-8781-3fc0408ca647",
+          "category": "conference"
         }
       ]
     },
@@ -1455,6 +1547,35 @@
           "endTime": null,
           "uid": "3fff989f-b8d7-42f4-8d39-c7d37f7f9e13",
           "category": "office"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-11-17",
+          "title": "Solid Tumor Board",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1200",
+          "endTime": "1300",
+          "uid": "3b2c9cd7-f691-497d-8587-8edf676675e0",
+          "category": "conference"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-24",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-11-24",
+          "title": "Solid Tumor Board",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1200",
+          "endTime": "1300",
+          "uid": "9b7e7758-0bcf-4a7e-bd20-1a24f3f6a7b9",
+          "category": "conference"
         }
       ]
     },
@@ -1523,6 +1644,18 @@
           "endTime": "1700",
           "uid": "461206d1-021d-4a16-beec-34f3bbedaa95",
           "category": "away"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-12-01",
+          "title": "Solid Tumor Board",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1200",
+          "endTime": "1300",
+          "uid": "5b107540-47d5-4f06-9403-56ef3d3b89ea",
+          "category": "conference"
         }
       ]
     },
@@ -1561,6 +1694,23 @@
       ]
     },
     {
+      "date": "2026-12-15",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-12-15",
+          "title": "Solid Tumor Board",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1200",
+          "endTime": "1300",
+          "uid": "bf4cb3cb-8d63-4644-94d1-1da446952de3",
+          "category": "conference"
+        }
+      ]
+    },
+    {
       "date": "2026-12-21",
       "assignments": [
         {
@@ -1574,6 +1724,23 @@
           "endTime": "2200",
           "uid": "eca17852-6621-4a09-b68d-895a651c7ea0",
           "category": "call"
+        }
+      ]
+    },
+    {
+      "date": "2026-12-22",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-12-22",
+          "title": "Solid Tumor Board",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1200",
+          "endTime": "1300",
+          "uid": "54ef9d09-e15d-49d1-8353-6f9b2487e323",
+          "category": "conference"
         }
       ]
     },
@@ -1713,18 +1880,6 @@
         {
           "calendar": "qgenda",
           "date": "2026-12-26",
-          "title": "Weekend/Holiday Early",
-          "location": "",
-          "notes": "",
-          "allDay": false,
-          "startTime": "0700",
-          "endTime": "1430",
-          "uid": "a4fe382a-9d3d-4773-9387-e39f5dcc1078",
-          "category": "call"
-        },
-        {
-          "calendar": "qgenda",
-          "date": "2026-12-26",
           "title": "Weekend Beeper",
           "location": "",
           "notes": "fluoro backup for JD ML pay 230p-10",
@@ -1732,6 +1887,18 @@
           "startTime": "0700",
           "endTime": "2200",
           "uid": "956e9377-6640-43bf-b264-be8fd593564a",
+          "category": "call"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-12-26",
+          "title": "Weekend/Holiday Early",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "0700",
+          "endTime": "1430",
+          "uid": "a4fe382a-9d3d-4773-9387-e39f5dcc1078",
           "category": "call"
         },
         {
@@ -1790,6 +1957,40 @@
       ]
     },
     {
+      "date": "2026-12-28",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-12-28",
+          "title": "QUIRI Conf",
+          "location": "",
+          "notes": "Pancreas Tumors",
+          "allDay": false,
+          "startTime": "1200",
+          "endTime": "1300",
+          "uid": "43c0bdcd-4459-495c-bc9b-ed2d8f822773",
+          "category": "conference"
+        }
+      ]
+    },
+    {
+      "date": "2026-12-29",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-12-29",
+          "title": "Solid Tumor Board",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1200",
+          "endTime": "1300",
+          "uid": "dd338f5b-a0ea-4a7a-bfa5-e76da5db7100",
+          "category": "conference"
+        }
+      ]
+    },
+    {
       "date": "2027-01-01",
       "assignments": [
         {
@@ -1803,6 +2004,40 @@
           "endTime": null,
           "uid": "3ba75f81-3c63-41ea-a834-28c2f90e37b4",
           "category": "away"
+        }
+      ]
+    },
+    {
+      "date": "2027-01-05",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2027-01-05",
+          "title": "Solid Tumor Board",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1200",
+          "endTime": "1300",
+          "uid": "8b6fa99b-aeeb-4a97-ab8f-7adb96597680",
+          "category": "conference"
+        }
+      ]
+    },
+    {
+      "date": "2027-01-12",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2027-01-12",
+          "title": "Solid Tumor Board",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1200",
+          "endTime": "1300",
+          "uid": "63925dc3-17c3-4a69-9239-65a1cd65a03b",
+          "category": "conference"
         }
       ]
     },
@@ -1824,6 +2059,23 @@
       ]
     },
     {
+      "date": "2027-01-19",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2027-01-19",
+          "title": "Solid Tumor Board",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1200",
+          "endTime": "1300",
+          "uid": "29cebc13-5ef5-4772-858e-93080668f748",
+          "category": "conference"
+        }
+      ]
+    },
+    {
       "date": "2027-01-25",
       "assignments": [
         {
@@ -1841,6 +2093,23 @@
       ]
     },
     {
+      "date": "2027-01-26",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2027-01-26",
+          "title": "Solid Tumor Board",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1200",
+          "endTime": "1300",
+          "uid": "c1219baf-2075-4424-9749-d016cac2ba08",
+          "category": "conference"
+        }
+      ]
+    },
+    {
       "date": "2027-02-01",
       "assignments": [
         {
@@ -1854,6 +2123,23 @@
           "endTime": "2200",
           "uid": "fbbc6e97-070d-4f9e-af26-19da3c2706eb",
           "category": "call"
+        }
+      ]
+    },
+    {
+      "date": "2027-02-02",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2027-02-02",
+          "title": "Solid Tumor Board",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1200",
+          "endTime": "1300",
+          "uid": "2fc106bd-e5f8-4550-bafa-c72053dcc31e",
+          "category": "conference"
         }
       ]
     },
@@ -1940,6 +2226,40 @@
       ]
     },
     {
+      "date": "2027-02-09",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2027-02-09",
+          "title": "Solid Tumor Board",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1200",
+          "endTime": "1300",
+          "uid": "1092304b-f161-471a-a0b3-10061359dcb1",
+          "category": "conference"
+        }
+      ]
+    },
+    {
+      "date": "2027-02-16",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2027-02-16",
+          "title": "Solid Tumor Board",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1200",
+          "endTime": "1300",
+          "uid": "5db31cd0-3686-4eb2-8309-3092cc3a8ce3",
+          "category": "conference"
+        }
+      ]
+    },
+    {
       "date": "2027-02-18",
       "assignments": [
         {
@@ -1970,6 +2290,40 @@
           "endTime": "1700",
           "uid": "e5f20d81-3af3-436c-a874-ef8daf44fe12",
           "category": "away"
+        }
+      ]
+    },
+    {
+      "date": "2027-02-23",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2027-02-23",
+          "title": "Solid Tumor Board",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1200",
+          "endTime": "1300",
+          "uid": "b24ef53e-f0d5-42b1-a897-5fda8a433ec2",
+          "category": "conference"
+        }
+      ]
+    },
+    {
+      "date": "2027-03-02",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2027-03-02",
+          "title": "Solid Tumor Board",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1200",
+          "endTime": "1300",
+          "uid": "86e12094-5e78-46dc-92f3-7acad4bf6ebf",
+          "category": "conference"
         }
       ]
     },
@@ -2005,6 +2359,18 @@
     {
       "date": "2027-03-09",
       "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2027-03-09",
+          "title": "Solid Tumor Board",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1200",
+          "endTime": "1300",
+          "uid": "558bd534-fc8c-4e22-a22b-a21cd77df86a",
+          "category": "conference"
+        },
         {
           "calendar": "qgenda",
           "date": "2027-03-09",
@@ -2119,6 +2485,23 @@
       ]
     },
     {
+      "date": "2027-03-16",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2027-03-16",
+          "title": "Solid Tumor Board",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1200",
+          "endTime": "1300",
+          "uid": "670143b7-c040-4602-9d5e-8aff7a5a3a8a",
+          "category": "conference"
+        }
+      ]
+    },
+    {
       "date": "2027-03-22",
       "assignments": [
         {
@@ -2132,6 +2515,57 @@
           "endTime": "2200",
           "uid": "43a64b97-5f4e-4e2c-a6ae-afffce11b630",
           "category": "call"
+        }
+      ]
+    },
+    {
+      "date": "2027-03-23",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2027-03-23",
+          "title": "Solid Tumor Board",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1200",
+          "endTime": "1300",
+          "uid": "ab078a9f-8cd0-43ab-abfa-c8924e774441",
+          "category": "conference"
+        }
+      ]
+    },
+    {
+      "date": "2027-03-30",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2027-03-30",
+          "title": "Solid Tumor Board",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1200",
+          "endTime": "1300",
+          "uid": "07f88c8b-3c51-4c9e-9948-c48221312c07",
+          "category": "conference"
+        }
+      ]
+    },
+    {
+      "date": "2027-04-06",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2027-04-06",
+          "title": "Solid Tumor Board",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1200",
+          "endTime": "1300",
+          "uid": "84c5262b-efc2-4ef9-b851-01a84329fa86",
+          "category": "conference"
         }
       ]
     },
@@ -2161,6 +2595,40 @@
           "endTime": "1700",
           "uid": "60f33145-3f00-4849-92a8-df9befb0cc63",
           "category": "call"
+        }
+      ]
+    },
+    {
+      "date": "2027-04-13",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2027-04-13",
+          "title": "Solid Tumor Board",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1200",
+          "endTime": "1300",
+          "uid": "9928a537-9ce0-422c-92f3-a08f6b94ad08",
+          "category": "conference"
+        }
+      ]
+    },
+    {
+      "date": "2027-04-20",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2027-04-20",
+          "title": "Solid Tumor Board",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1200",
+          "endTime": "1300",
+          "uid": "e4f7c6ad-fbf5-4ba1-994d-3e34f2d35f21",
+          "category": "conference"
         }
       ]
     },
