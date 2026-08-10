@@ -1,5 +1,5 @@
 {
-  "_generatedAt": "2026-08-09T16:11:35.927Z",
+  "_generatedAt": "2026-08-10T04:36:22.542Z",
   "person": "Alex",
   "displayTimeZone": "America/New_York",
   "fiscalYear": {
@@ -1517,6 +1517,23 @@
       ]
     },
     {
+      "date": "2026-11-13",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-11-13",
+          "title": "Office",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "a001ace7-4d73-4011-92d0-d98507e88ea7",
+          "category": "office"
+        }
+      ]
+    },
+    {
       "date": "2026-11-16",
       "assignments": [
         {
@@ -2604,6 +2621,18 @@
         {
           "calendar": "qgenda",
           "date": "2027-04-13",
+          "title": "Off",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "9186378d-2863-464e-a311-fae40e87e917",
+          "category": "away"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2027-04-13",
           "title": "Solid Tumor Board",
           "location": "",
           "notes": "",
@@ -2612,6 +2641,57 @@
           "endTime": "1300",
           "uid": "9928a537-9ce0-422c-92f3-a08f6b94ad08",
           "category": "conference"
+        }
+      ]
+    },
+    {
+      "date": "2027-04-14",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2027-04-14",
+          "title": "Off",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "8a5c8c1e-8156-458f-ba92-240e69972fd6",
+          "category": "away"
+        }
+      ]
+    },
+    {
+      "date": "2027-04-15",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2027-04-15",
+          "title": "Off",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "8fc0c37b-d8f7-4119-86bd-462b6289c1bb",
+          "category": "away"
+        }
+      ]
+    },
+    {
+      "date": "2027-04-16",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2027-04-16",
+          "title": "Off",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "60d1772e-35ef-4298-a42d-64083851f22c",
+          "category": "away"
         }
       ]
     },
