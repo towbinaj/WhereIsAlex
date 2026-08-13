@@ -1,5 +1,5 @@
 {
-  "_generatedAt": "2026-08-11T04:34:01.924Z",
+  "_generatedAt": "2026-08-13T04:40:43.437Z",
   "person": "Alex",
   "displayTimeZone": "America/New_York",
   "fiscalYear": {
@@ -2042,6 +2042,23 @@
       ]
     },
     {
+      "date": "2027-01-07",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2027-01-07",
+          "title": "AM Conf",
+          "location": "",
+          "notes": "Liver Tumors I",
+          "allDay": false,
+          "startTime": "0745",
+          "endTime": "0830",
+          "uid": "7f5c5ad5-f7a5-4a77-b785-022a5a063425",
+          "category": "conference"
+        }
+      ]
+    },
+    {
       "date": "2027-01-12",
       "assignments": [
         {
@@ -2340,6 +2357,23 @@
           "startTime": "1200",
           "endTime": "1300",
           "uid": "86e12094-5e78-46dc-92f3-7acad4bf6ebf",
+          "category": "conference"
+        }
+      ]
+    },
+    {
+      "date": "2027-03-04",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2027-03-04",
+          "title": "AM Conf",
+          "location": "",
+          "notes": "Liver Tumors 2",
+          "allDay": false,
+          "startTime": "0745",
+          "endTime": "0830",
+          "uid": "45028862-f1f6-4ce6-a266-150366c982bc",
           "category": "conference"
         }
       ]
