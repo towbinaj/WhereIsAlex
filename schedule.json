@@ -1,5 +1,5 @@
 {
-  "_generatedAt": "2026-08-14T04:39:05.144Z",
+  "_generatedAt": "2026-08-15T04:13:08.143Z",
   "person": "Alex",
   "displayTimeZone": "America/New_York",
   "fiscalYear": {
@@ -646,6 +646,30 @@
           "endTime": "1700",
           "uid": "6ef52252-0476-482e-b056-19f699bc2421",
           "category": "clinical"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-08-14",
+          "title": "Moonlighting shift",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1700",
+          "endTime": "2200",
+          "uid": "7bae140c-2b4d-42c4-9b86-836b2d4071d7",
+          "category": "call"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-08-14",
+          "title": "Eve 1",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1700",
+          "endTime": "2200",
+          "uid": "8078ba9a-b928-4169-89e7-e9ec0e5c3893",
+          "category": "call"
         }
       ]
     },
