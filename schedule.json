@@ -1,5 +1,5 @@
 {
-  "_generatedAt": "2026-08-17T16:08:56.599Z",
+  "_generatedAt": "2026-08-20T04:17:35.924Z",
   "person": "Alex",
   "displayTimeZone": "America/New_York",
   "fiscalYear": {
@@ -650,18 +650,6 @@
         {
           "calendar": "qgenda",
           "date": "2026-08-14",
-          "title": "Moonlighting shift",
-          "location": "",
-          "notes": "",
-          "allDay": false,
-          "startTime": "1700",
-          "endTime": "2200",
-          "uid": "7bae140c-2b4d-42c4-9b86-836b2d4071d7",
-          "category": "call"
-        },
-        {
-          "calendar": "qgenda",
-          "date": "2026-08-14",
           "title": "Eve 1",
           "location": "",
           "notes": "",
@@ -669,6 +657,18 @@
           "startTime": "1700",
           "endTime": "2200",
           "uid": "8078ba9a-b928-4169-89e7-e9ec0e5c3893",
+          "category": "call"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-08-14",
+          "title": "Moonlighting shift",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1700",
+          "endTime": "2200",
+          "uid": "7bae140c-2b4d-42c4-9b86-836b2d4071d7",
           "category": "call"
         }
       ]
@@ -892,8 +892,37 @@
       ]
     },
     {
+      "date": "2026-08-31",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-08-31",
+          "title": "Trunk 2",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1000",
+          "endTime": "1800",
+          "uid": "a28fba7e-e32f-4063-88e3-84aba39d338e",
+          "category": "clinical"
+        }
+      ]
+    },
+    {
       "date": "2026-09-01",
       "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-09-01",
+          "title": "Office",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "0c865e57-3ac2-4d2a-9428-49e0759cb390",
+          "category": "office"
+        },
         {
           "calendar": "qgenda",
           "date": "2026-09-01",
@@ -904,6 +933,81 @@
           "startTime": "1200",
           "endTime": "1300",
           "uid": "932ea7c0-26da-4f63-87aa-ae822d15d647",
+          "category": "conference"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-02",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-09-02",
+          "title": "Office",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "b95142ee-a3f5-4d1b-8e60-270957af8d93",
+          "category": "office"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-09-02",
+          "title": "Jeopardy",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "1d169756-080a-4459-aa92-37b53cd17f5b",
+          "category": "call"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-03",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-09-03",
+          "title": "Office",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "ccec148b-64a5-488c-abd0-1db8d5c7487d",
+          "category": "office"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-04",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-09-04",
+          "title": "Trunk 1",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "0700",
+          "endTime": "1500",
+          "uid": "9d63be79-8025-4c65-9d8a-85bad81b70d2",
+          "category": "clinical"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-09-04",
+          "title": "Tuberous Sclerosis Conf",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1400",
+          "endTime": "1500",
+          "uid": "e74ca1e4-740c-4d0f-ae02-cba85e5b246f",
           "category": "conference"
         }
       ]
@@ -1066,6 +1170,52 @@
       ]
     },
     {
+      "date": "2026-09-10",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-09-10",
+          "title": "Office",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "49ba7d83-71f5-4467-93a8-a7bc1140a37a",
+          "category": "office"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-09-10",
+          "title": "Kenwood",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "0745",
+          "endTime": "1700",
+          "uid": "3a087c76-e8dd-4984-b964-4a4877eb5a0b",
+          "category": "clinical"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-11",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-09-11",
+          "title": "Liberty",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "0745",
+          "endTime": "1700",
+          "uid": "8c6f673c-9dc2-4dc0-bb33-8367e8573cd4",
+          "category": "clinical"
+        }
+      ]
+    },
+    {
       "date": "2026-09-12",
       "assignments": [
         {
@@ -1171,6 +1321,23 @@
           "endTime": "1300",
           "uid": "995f2c9f-6953-408b-a510-e4a458322e61",
           "category": "conference"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-28",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-09-28",
+          "title": "Off",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "ea2880be-b946-45d9-b1c5-858ebb113708",
+          "category": "away"
         }
       ]
     },
@@ -1861,18 +2028,6 @@
         {
           "calendar": "qgenda",
           "date": "2026-12-25",
-          "title": "Holiday Early",
-          "location": "",
-          "notes": "",
-          "allDay": true,
-          "startTime": null,
-          "endTime": null,
-          "uid": "57a9806c-a3dd-4821-be12-65843ef4f74c",
-          "category": "call"
-        },
-        {
-          "calendar": "qgenda",
-          "date": "2026-12-25",
           "title": "Observed Holiday",
           "location": "",
           "notes": "",
@@ -1881,6 +2036,18 @@
           "endTime": null,
           "uid": "e772e239-36df-41cf-87fd-044dc4987f17",
           "category": "away"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-12-25",
+          "title": "Holiday Early",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "57a9806c-a3dd-4821-be12-65843ef4f74c",
+          "category": "call"
         },
         {
           "calendar": "qgenda",
