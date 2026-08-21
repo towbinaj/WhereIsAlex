@@ -1,5 +1,5 @@
 {
-  "_generatedAt": "2026-08-20T16:11:54.141Z",
+  "_generatedAt": "2026-08-21T16:11:25.163Z",
   "person": "Alex",
   "displayTimeZone": "America/New_York",
   "fiscalYear": {
@@ -1321,6 +1321,40 @@
           "endTime": "1300",
           "uid": "995f2c9f-6953-408b-a510-e4a458322e61",
           "category": "conference"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-24",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-09-24",
+          "title": "Off",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "45307e06-76ac-4f3c-be9a-480fa3cce6d5",
+          "category": "away"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-25",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-09-25",
+          "title": "Off",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "5e33bdd9-0fba-4b21-999e-e0b8460eb312",
+          "category": "away"
         }
       ]
     },
