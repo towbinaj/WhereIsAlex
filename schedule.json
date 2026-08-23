@@ -1,5 +1,5 @@
 {
-  "_generatedAt": "2026-08-21T16:11:25.163Z",
+  "_generatedAt": "2026-08-23T04:17:26.686Z",
   "person": "Alex",
   "displayTimeZone": "America/New_York",
   "fiscalYear": {
@@ -3079,8 +3079,37 @@
       ]
     },
     {
+      "date": "2027-05-17",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2027-05-17",
+          "title": "Off",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "e41f6df4-ed9f-4086-8c75-5995fcb1b1b7",
+          "category": "away"
+        }
+      ]
+    },
+    {
       "date": "2027-05-18",
       "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2027-05-18",
+          "title": "Off",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "f68e0c35-c9b3-48db-b03b-5047707fa7e3",
+          "category": "away"
+        },
         {
           "calendar": "qgenda",
           "date": "2027-05-18",
@@ -3092,6 +3121,57 @@
           "endTime": "1300",
           "uid": "5d2352fa-1777-4953-9ada-0584f96e3117",
           "category": "conference"
+        }
+      ]
+    },
+    {
+      "date": "2027-05-19",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2027-05-19",
+          "title": "Off",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "b232b5d2-f6fa-4833-99d6-81d56ca7eced",
+          "category": "away"
+        }
+      ]
+    },
+    {
+      "date": "2027-05-20",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2027-05-20",
+          "title": "Off",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "3569dccd-ab47-497f-a802-75d649361056",
+          "category": "away"
+        }
+      ]
+    },
+    {
+      "date": "2027-05-21",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2027-05-21",
+          "title": "Off",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "c5262b47-c997-4ca7-9d69-c1e3fdae4ff9",
+          "category": "away"
         }
       ]
     },
