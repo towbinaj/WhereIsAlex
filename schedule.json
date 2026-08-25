@@ -1,5 +1,5 @@
 {
-  "_generatedAt": "2026-08-25T04:17:56.775Z",
+  "_generatedAt": "2026-08-25T16:16:00.160Z",
   "person": "Alex",
   "displayTimeZone": "America/New_York",
   "fiscalYear": {
@@ -650,18 +650,6 @@
         {
           "calendar": "qgenda",
           "date": "2026-08-14",
-          "title": "Moonlighting shift",
-          "location": "",
-          "notes": "",
-          "allDay": false,
-          "startTime": "1700",
-          "endTime": "2200",
-          "uid": "7bae140c-2b4d-42c4-9b86-836b2d4071d7",
-          "category": "call"
-        },
-        {
-          "calendar": "qgenda",
-          "date": "2026-08-14",
           "title": "Eve 1",
           "location": "",
           "notes": "",
@@ -669,6 +657,18 @@
           "startTime": "1700",
           "endTime": "2200",
           "uid": "8078ba9a-b928-4169-89e7-e9ec0e5c3893",
+          "category": "call"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-08-14",
+          "title": "Moonlighting shift",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1700",
+          "endTime": "2200",
+          "uid": "7bae140c-2b4d-42c4-9b86-836b2d4071d7",
           "category": "call"
         }
       ]
@@ -789,18 +789,6 @@
           "endTime": null,
           "uid": "dce75188-1c83-4236-9ddb-ed25469225a7",
           "category": "office"
-        },
-        {
-          "calendar": "qgenda",
-          "date": "2026-08-25",
-          "title": "Solid Tumor Board",
-          "location": "",
-          "notes": "",
-          "allDay": false,
-          "startTime": "1200",
-          "endTime": "1300",
-          "uid": "afe544ca-f402-4dbe-8b9c-95290101f306",
-          "category": "conference"
         }
       ]
     },
@@ -1274,8 +1262,37 @@
       ]
     },
     {
+      "date": "2026-09-14",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-09-14",
+          "title": "Fluoro",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "0730",
+          "endTime": "1700",
+          "uid": "15d99ca7-ed34-4494-9914-abb28da35686",
+          "category": "clinical"
+        }
+      ]
+    },
+    {
       "date": "2026-09-15",
       "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-09-15",
+          "title": "Office",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "fa22f320-972a-434a-bbf7-7b4b3ea6b64f",
+          "category": "office"
+        },
         {
           "calendar": "qgenda",
           "date": "2026-09-15",
@@ -1287,6 +1304,57 @@
           "endTime": "1300",
           "uid": "64ddf8eb-1521-4c83-ab72-e1340a386398",
           "category": "conference"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-16",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-09-16",
+          "title": "Ultrasound",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "0745",
+          "endTime": "1700",
+          "uid": "81518379-8264-474c-890e-5a4e2fe48465",
+          "category": "clinical"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-17",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-09-17",
+          "title": "Office",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "e0e58d44-a3aa-4812-a013-abe675ce68f8",
+          "category": "office"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-09-18",
+          "title": "Trunk 1",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "0700",
+          "endTime": "1500",
+          "uid": "c4ddc087-0bd7-453c-bd30-4fb63cd0600c",
+          "category": "clinical"
         }
       ]
     },
@@ -1313,6 +1381,18 @@
         {
           "calendar": "qgenda",
           "date": "2026-09-22",
+          "title": "Office",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "1589349f-14f7-4058-9be7-ada8a53e2310",
+          "category": "office"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-09-22",
           "title": "Solid Tumor Board",
           "location": "",
           "notes": "",
@@ -1321,6 +1401,23 @@
           "endTime": "1300",
           "uid": "995f2c9f-6953-408b-a510-e4a458322e61",
           "category": "conference"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-23",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-09-23",
+          "title": "Resource",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "0700",
+          "endTime": "1500",
+          "uid": "463d2455-8cd5-4d37-be49-7a457d3583b6",
+          "category": "clinical"
         }
       ]
     },
@@ -2062,18 +2159,6 @@
         {
           "calendar": "qgenda",
           "date": "2026-12-25",
-          "title": "Holiday Early",
-          "location": "",
-          "notes": "",
-          "allDay": true,
-          "startTime": null,
-          "endTime": null,
-          "uid": "57a9806c-a3dd-4821-be12-65843ef4f74c",
-          "category": "call"
-        },
-        {
-          "calendar": "qgenda",
-          "date": "2026-12-25",
           "title": "Observed Holiday",
           "location": "",
           "notes": "",
@@ -2082,6 +2167,18 @@
           "endTime": null,
           "uid": "e772e239-36df-41cf-87fd-044dc4987f17",
           "category": "away"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-12-25",
+          "title": "Holiday Early",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "57a9806c-a3dd-4821-be12-65843ef4f74c",
+          "category": "call"
         },
         {
           "calendar": "qgenda",
