@@ -1,5 +1,5 @@
 {
-  "_generatedAt": "2026-08-26T04:18:10.341Z",
+  "_generatedAt": "2026-08-26T16:32:18.329Z",
   "person": "Alex",
   "displayTimeZone": "America/New_York",
   "fiscalYear": {
@@ -1410,14 +1410,26 @@
         {
           "calendar": "qgenda",
           "date": "2026-09-23",
-          "title": "Resource",
+          "title": "Trunk 1",
           "location": "",
-          "notes": "",
+          "notes": "ok to work",
           "allDay": false,
           "startTime": "0700",
           "endTime": "1500",
-          "uid": "463d2455-8cd5-4d37-be49-7a457d3583b6",
+          "uid": "9f8d3e25-bbc5-402e-a9c7-251bd569ee44",
           "category": "clinical"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-09-23",
+          "title": "Surg Conf",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1200",
+          "endTime": "1300",
+          "uid": "74a3e282-d595-464d-bbea-2a40d07837dc",
+          "category": "conference"
         }
       ]
     },
