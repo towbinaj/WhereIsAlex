@@ -1,5 +1,5 @@
 {
-  "_generatedAt": "2026-08-26T16:32:18.329Z",
+  "_generatedAt": "2026-08-29T04:18:46.777Z",
   "person": "Alex",
   "displayTimeZone": "America/New_York",
   "fiscalYear": {
@@ -1532,18 +1532,6 @@
           "endTime": "1700",
           "uid": "6e50a41a-5501-4ac4-8743-2b1a24a05990",
           "category": "away"
-        },
-        {
-          "calendar": "qgenda",
-          "date": "2026-10-06",
-          "title": "Solid Tumor Board",
-          "location": "",
-          "notes": "",
-          "allDay": false,
-          "startTime": "1200",
-          "endTime": "1300",
-          "uid": "063a3b53-21b1-4410-9723-e7961a36da14",
-          "category": "conference"
         }
       ]
     },
