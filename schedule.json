@@ -1,5 +1,5 @@
 {
-  "_generatedAt": "2026-08-31T04:23:53.682Z",
+  "_generatedAt": "2026-08-31T16:19:37.467Z",
   "person": "Alex",
   "displayTimeZone": "America/New_York",
   "fiscalYear": {
@@ -985,6 +985,18 @@
           "endTime": "1500",
           "uid": "9d63be79-8025-4c65-9d8a-85bad81b70d2",
           "category": "clinical"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-09-04",
+          "title": "GI Conf",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "0745",
+          "endTime": "0830",
+          "uid": "3edf386f-087b-411e-8908-ee565d201e03",
+          "category": "conference"
         },
         {
           "calendar": "qgenda",
