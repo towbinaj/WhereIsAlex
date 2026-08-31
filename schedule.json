@@ -1,5 +1,5 @@
 {
-  "_generatedAt": "2026-08-30T04:20:18.412Z",
+  "_generatedAt": "2026-08-31T04:23:53.682Z",
   "person": "Alex",
   "displayTimeZone": "America/New_York",
   "fiscalYear": {
@@ -3565,6 +3565,23 @@
           "endTime": "1300",
           "uid": "96fdeee3-d7e9-4c76-b960-597493214e2d",
           "category": "conference"
+        }
+      ]
+    },
+    {
+      "date": "2027-06-23",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2027-06-23",
+          "title": "Office",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "30e1081c-788f-426c-bea7-131f27c49585",
+          "category": "office"
         }
       ]
     },
