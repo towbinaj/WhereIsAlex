@@ -1,5 +1,5 @@
 {
-  "_generatedAt": "2026-08-31T16:19:37.467Z",
+  "_generatedAt": "2026-09-18T10:55:14.942Z",
   "person": "Alex",
   "displayTimeZone": "America/New_York",
   "fiscalYear": {
@@ -1359,13 +1359,13 @@
         {
           "calendar": "qgenda",
           "date": "2026-09-18",
-          "title": "Trunk 1",
+          "title": "Trunk 2",
           "location": "",
           "notes": "",
           "allDay": false,
-          "startTime": "0700",
-          "endTime": "1500",
-          "uid": "c4ddc087-0bd7-453c-bd30-4fb63cd0600c",
+          "startTime": "1000",
+          "endTime": "1800",
+          "uid": "4690ff86-e377-4c9c-be4c-8689c54104bc",
           "category": "clinical"
         }
       ]
@@ -1401,18 +1401,6 @@
           "endTime": null,
           "uid": "1589349f-14f7-4058-9be7-ada8a53e2310",
           "category": "office"
-        },
-        {
-          "calendar": "qgenda",
-          "date": "2026-09-22",
-          "title": "Solid Tumor Board",
-          "location": "",
-          "notes": "",
-          "allDay": false,
-          "startTime": "1200",
-          "endTime": "1300",
-          "uid": "995f2c9f-6953-408b-a510-e4a458322e61",
-          "category": "conference"
         }
       ]
     },
@@ -1502,6 +1490,18 @@
         {
           "calendar": "qgenda",
           "date": "2026-09-29",
+          "title": "Office",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "d8970d36-6eb2-49c0-bec8-21e1d32af419",
+          "category": "office"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-09-29",
           "title": "Solid Tumor Board",
           "location": "",
           "notes": "",
@@ -1509,6 +1509,81 @@
           "startTime": "1200",
           "endTime": "1300",
           "uid": "ac3dc189-297e-4fac-bd99-82aa80c7020b",
+          "category": "conference"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-30",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-09-30",
+          "title": "Office",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "67675ff6-7441-484b-91f8-32648a18a562",
+          "category": "office"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-09-30",
+          "title": "Jeopardy",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "9bfaf4bb-79bd-41dc-9bdb-0d300ebc9e7e",
+          "category": "call"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-01",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-10-01",
+          "title": "Office",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "f0699ee9-fcbe-4a6a-96be-b0bde7b789b7",
+          "category": "office"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-02",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-10-02",
+          "title": "Ultrasound",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "0745",
+          "endTime": "1700",
+          "uid": "b16c67ab-6ebe-41fa-8894-ee36b45ab6c0",
+          "category": "clinical"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-10-02",
+          "title": "Tuberous Sclerosis Conf",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1400",
+          "endTime": "1500",
+          "uid": "d183edd6-2447-40d7-95a2-0e1f8461c35c",
           "category": "conference"
         }
       ]
@@ -1604,20 +1679,44 @@
         {
           "calendar": "qgenda",
           "date": "2026-10-12",
-          "title": "Off",
+          "title": "Eve 1",
           "location": "",
           "notes": "",
-          "allDay": true,
-          "startTime": null,
-          "endTime": null,
-          "uid": "c7fdb2ec-09b2-4861-9155-edfc6961ae94",
-          "category": "away"
+          "allDay": false,
+          "startTime": "1500",
+          "endTime": "2200",
+          "uid": "dd381447-93d9-4270-a495-c646e933ed92",
+          "category": "call"
         }
       ]
     },
     {
       "date": "2026-10-13",
       "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-10-13",
+          "title": "Office",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "768e43a8-29c7-4d11-9d98-2c193dc068e4",
+          "category": "office"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-10-13",
+          "title": "Jeopardy",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "b190deba-d271-4990-84a5-98230dc8e8c8",
+          "category": "call"
+        },
         {
           "calendar": "qgenda",
           "date": "2026-10-13",
@@ -1629,6 +1728,40 @@
           "endTime": "1300",
           "uid": "39e3593c-664d-4264-9ddc-826e6a59555c",
           "category": "conference"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-14",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-10-14",
+          "title": "Office",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "e8f448d1-6dc0-4775-927f-4a40f4f9de58",
+          "category": "office"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-15",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-10-15",
+          "title": "Office",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "1c365c37-e347-4838-bbd5-91b425e0095d",
+          "category": "office"
         }
       ]
     },
@@ -1684,18 +1817,6 @@
         {
           "calendar": "qgenda",
           "date": "2026-10-20",
-          "title": "Solid Tumor Board",
-          "location": "",
-          "notes": "",
-          "allDay": false,
-          "startTime": "1200",
-          "endTime": "1300",
-          "uid": "08e3716a-8651-4212-8e81-497755efc179",
-          "category": "conference"
-        },
-        {
-          "calendar": "qgenda",
-          "date": "2026-10-20",
           "title": "Eve 3",
           "location": "",
           "notes": "",
@@ -1737,23 +1858,6 @@
       ]
     },
     {
-      "date": "2026-10-25",
-      "assignments": [
-        {
-          "calendar": "qgenda",
-          "date": "2026-10-25",
-          "title": "Weekend Mid",
-          "location": "",
-          "notes": "",
-          "allDay": false,
-          "startTime": "1200",
-          "endTime": "1700",
-          "uid": "8a71aabf-b90a-4e83-8187-ce8080ec120d",
-          "category": "call"
-        }
-      ]
-    },
-    {
       "date": "2026-10-26",
       "assignments": [
         {
@@ -1784,18 +1888,6 @@
           "endTime": null,
           "uid": "af145bfd-ff43-441c-bb0c-e49f4c87d4c0",
           "category": "away"
-        },
-        {
-          "calendar": "qgenda",
-          "date": "2026-10-27",
-          "title": "Solid Tumor Board",
-          "location": "",
-          "notes": "",
-          "allDay": false,
-          "startTime": "1200",
-          "endTime": "1300",
-          "uid": "6a090dfe-4503-4391-9f45-b661a138f913",
-          "category": "conference"
         }
       ]
     },
@@ -1847,6 +1939,23 @@
           "endTime": "1300",
           "uid": "02fb9a40-ab13-4902-8120-263b2a18374e",
           "category": "conference"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-08",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-11-08",
+          "title": "Weekend Mid",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1200",
+          "endTime": "1700",
+          "uid": "a9ea25cb-25d4-403d-adcc-3dc5de0e0086",
+          "category": "call"
         }
       ]
     },
@@ -2029,18 +2138,6 @@
           "endTime": "1700",
           "uid": "461206d1-021d-4a16-beec-34f3bbedaa95",
           "category": "away"
-        },
-        {
-          "calendar": "qgenda",
-          "date": "2026-12-01",
-          "title": "Solid Tumor Board",
-          "location": "",
-          "notes": "",
-          "allDay": false,
-          "startTime": "1200",
-          "endTime": "1300",
-          "uid": "5b107540-47d5-4f06-9403-56ef3d3b89ea",
-          "category": "conference"
         }
       ]
     },
@@ -2075,6 +2172,35 @@
           "endTime": "1700",
           "uid": "54a454df-3091-450c-8fe8-525df1111d06",
           "category": "away"
+        }
+      ]
+    },
+    {
+      "date": "2026-12-04",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-12-04",
+          "title": "Fluoro",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "0730",
+          "endTime": "1700",
+          "uid": "c78a96b3-d95f-441f-9313-361cfa60103d",
+          "category": "clinical"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-12-04",
+          "title": "Tuberous Sclerosis Conf",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1400",
+          "endTime": "1500",
+          "uid": "d6dc9401-b5e3-4f60-8dc3-e1b99c39bff7",
+          "category": "conference"
         }
       ]
     },
@@ -3098,8 +3224,37 @@
       ]
     },
     {
+      "date": "2027-04-19",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2027-04-19",
+          "title": "Office",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "e187c507-8451-4418-b4b8-fb3bcf669ccf",
+          "category": "office"
+        }
+      ]
+    },
+    {
       "date": "2027-04-20",
       "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2027-04-20",
+          "title": "Off",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "d4c277b1-8891-413a-bd36-bbc5c1c86696",
+          "category": "away"
+        },
         {
           "calendar": "qgenda",
           "date": "2027-04-20",
@@ -3111,6 +3266,23 @@
           "endTime": "1300",
           "uid": "e4f7c6ad-fbf5-4ba1-994d-3e34f2d35f21",
           "category": "conference"
+        }
+      ]
+    },
+    {
+      "date": "2027-04-21",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2027-04-21",
+          "title": "Office",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "52010676-3724-4a74-811a-31cccd35abf1",
+          "category": "office"
         }
       ]
     },
