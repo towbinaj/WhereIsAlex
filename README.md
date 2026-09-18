@@ -39,7 +39,7 @@ node scripts/build-schedule.js --file=path/to/downloaded.ics
 1. Create a GitHub repo and push these files.
 2. **Settings → Pages** → deploy from the `main` branch, root.
 3. Add the `QGENDA_VIEW_URL` **Actions secret** (`gh secret set QGENDA_VIEW_URL`).
-4. The included workflow (`.github/workflows/refresh-schedule.yml`) rebuilds `schedule.json` **twice daily (noon & midnight Eastern)** and commits it back only when the data changed. It pushes with the repo's default `GITHUB_TOKEN`.
+4. The included workflow (`.github/workflows/refresh-schedule.yml`) rebuilds `schedule.json` on a cron aimed at **noon & midnight Eastern** (GitHub may start runs a few hours late) and commits it back only when the data changed. It pushes with the repo's default `GITHUB_TOKEN`.
 
 The page is marked `noindex` so it stays out of search engines; anyone with the link can view it.
 

@@ -107,9 +107,16 @@ see Privacy). To build locally you must provide it:
   intermittently fails with *"Deployment failed, try again later"* — a GitHub-side
   hiccup, not your files. Just re-run it (`gh run rerun <id>` or Actions → Re-run jobs).
   This happened several times during development; it's expected, not a bug in the repo.
-- **Refresh schedule** (`.github/workflows/refresh-schedule.yml`) runs at 04/05/16/17
-  UTC; an in-job guard skips all but the two that land on noon/midnight US Eastern
-  (DST-proof). It commits `schedule.json` only when the schedule data actually changed.
+- **Refresh schedule** (`.github/workflows/refresh-schedule.yml`) is cron'd at 04/05/16/17
+  UTC (≈ noon/midnight Eastern in EST and EDT). **Every run rebuilds** — there is
+  deliberately no "is it exactly noon/midnight?" guard. There used to be one, and in
+  Sep 2026 GitHub started launching scheduled runs 3–4 hours late (and only ~2 of the
+  4 per day), so the guard skipped every run and the site went stale for weeks while
+  every run still showed green. Extra rebuilds are harmless: the job commits
+  `schedule.json` only when the schedule data actually changed.
+- **If the site looks stale**, check the Actions tab: a green run whose "Rebuild" step
+  says *skipped*, or no "chore: refresh" commit for days, means the refresh isn't really
+  running. Compare `_generatedAt` in the live `schedule.json` against the last commit.
 - The "pages build and deployment" workflow is **GitHub-managed** (not a file here) and
   emits a Node 20 deprecation warning we can't fix. Our own workflow is on
   `checkout@v5` / `setup-node@v5` / Node 22 and is clean.

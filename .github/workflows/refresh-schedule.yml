@@ -6,9 +6,10 @@ name: Refresh schedule
 
 on:
   schedule:
-    # Target: noon & midnight US Eastern. Cron is UTC and can't follow DST, so
-    # we fire at both the EST and EDT candidate hours (00/12 ET is 04/05 & 16/17
-    # UTC) and a guard below drops the two that aren't actually noon/midnight ET.
+    # Roughly noon & midnight US Eastern (04/05 & 16/17 UTC cover EST and EDT).
+    # GitHub often starts scheduled runs hours late and may drop some, so we
+    # don't gate on the exact hour — every run rebuilds, and the job below only
+    # commits when the data actually changed, so extra runs cost nothing.
     - cron: "0 4,5,16,17 * * *"
   workflow_dispatch: {}  # manual "Run workflow" button in the Actions tab
 
@@ -31,17 +32,7 @@ jobs:
         with:
           node-version: 22
 
-      - name: Skip scheduled runs that aren't noon/midnight Eastern
-        if: github.event_name == 'schedule'
-        run: |
-          H=$(TZ=America/New_York date +%H)
-          if [ "$H" != "00" ] && [ "$H" != "12" ]; then
-            echo "Eastern hour is $H — not noon/midnight, skipping."
-            echo "skip=true" >> "$GITHUB_ENV"
-          fi
-
       - name: Rebuild schedule.json and commit only on data change
-        if: env.skip != 'true'
         env:
           QGENDA_VIEW_URL: ${{ secrets.QGENDA_VIEW_URL }}
         run: |
