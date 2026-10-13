@@ -1,5 +1,5 @@
 {
-  "_generatedAt": "2026-10-13T11:37:26.129Z",
+  "_generatedAt": "2026-10-13T21:07:51.730Z",
   "person": "Alex",
   "displayTimeZone": "America/New_York",
   "fiscalYear": {
@@ -650,18 +650,6 @@
         {
           "calendar": "qgenda",
           "date": "2026-08-14",
-          "title": "Eve 1",
-          "location": "",
-          "notes": "",
-          "allDay": false,
-          "startTime": "1700",
-          "endTime": "2200",
-          "uid": "8078ba9a-b928-4169-89e7-e9ec0e5c3893",
-          "category": "call"
-        },
-        {
-          "calendar": "qgenda",
-          "date": "2026-08-14",
           "title": "Moonlighting shift",
           "location": "",
           "notes": "",
@@ -669,6 +657,18 @@
           "startTime": "1700",
           "endTime": "2200",
           "uid": "7bae140c-2b4d-42c4-9b86-836b2d4071d7",
+          "category": "call"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-08-14",
+          "title": "Eve 1",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1700",
+          "endTime": "2200",
+          "uid": "8078ba9a-b928-4169-89e7-e9ec0e5c3893",
           "category": "call"
         }
       ]
@@ -1519,18 +1519,6 @@
         {
           "calendar": "qgenda",
           "date": "2026-09-30",
-          "title": "Office",
-          "location": "",
-          "notes": "",
-          "allDay": true,
-          "startTime": null,
-          "endTime": null,
-          "uid": "67675ff6-7441-484b-91f8-32648a18a562",
-          "category": "office"
-        },
-        {
-          "calendar": "qgenda",
-          "date": "2026-09-30",
           "title": "Jeopardy",
           "location": "",
           "notes": "",
@@ -1539,6 +1527,18 @@
           "endTime": null,
           "uid": "9bfaf4bb-79bd-41dc-9bdb-0d300ebc9e7e",
           "category": "call"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-09-30",
+          "title": "Office",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "67675ff6-7441-484b-91f8-32648a18a562",
+          "category": "office"
         }
       ]
     },
@@ -1960,6 +1960,23 @@
       ]
     },
     {
+      "date": "2026-10-29",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-10-29",
+          "title": "Office",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "01254f61-7c2c-4a15-9036-037afcd37e5a",
+          "category": "office"
+        }
+      ]
+    },
+    {
       "date": "2026-10-30",
       "assignments": [
         {
@@ -2108,8 +2125,37 @@
       ]
     },
     {
+      "date": "2026-11-23",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-11-23",
+          "title": "Trunk 1",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "0700",
+          "endTime": "1500",
+          "uid": "e14db39e-3038-4c35-80cb-54d64d6e5440",
+          "category": "clinical"
+        }
+      ]
+    },
+    {
       "date": "2026-11-24",
       "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-11-24",
+          "title": "Office",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "4a74c9b2-4a60-407f-a1fe-5a4be84ec76c",
+          "category": "office"
+        },
         {
           "calendar": "qgenda",
           "date": "2026-11-24",
@@ -2121,6 +2167,35 @@
           "endTime": "1300",
           "uid": "9b7e7758-0bcf-4a7e-bd20-1a24f3f6a7b9",
           "category": "conference"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-25",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-11-25",
+          "title": "Office",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "5de2656d-33f1-41d6-b8f4-7c3513b714c6",
+          "category": "office"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-11-25",
+          "title": "Jeopardy",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "a4d2cd09-f518-4b2e-9e6e-9d151b541927",
+          "category": "call"
         }
       ]
     },
@@ -2442,18 +2517,6 @@
         {
           "calendar": "qgenda",
           "date": "2026-12-26",
-          "title": "Weekend/Holiday Early",
-          "location": "",
-          "notes": "",
-          "allDay": false,
-          "startTime": "0700",
-          "endTime": "1430",
-          "uid": "a4fe382a-9d3d-4773-9387-e39f5dcc1078",
-          "category": "call"
-        },
-        {
-          "calendar": "qgenda",
-          "date": "2026-12-26",
           "title": "Weekend Beeper",
           "location": "",
           "notes": "fluoro backup for JD ML pay 230p-10",
@@ -2461,6 +2524,18 @@
           "startTime": "0700",
           "endTime": "2200",
           "uid": "956e9377-6640-43bf-b264-be8fd593564a",
+          "category": "call"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-12-26",
+          "title": "Weekend/Holiday Early",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "0700",
+          "endTime": "1430",
+          "uid": "a4fe382a-9d3d-4773-9387-e39f5dcc1078",
           "category": "call"
         },
         {
