@@ -1,5 +1,5 @@
 {
-  "_generatedAt": "2026-10-18T18:33:13.341Z",
+  "_generatedAt": "2026-10-22T19:55:04.929Z",
   "person": "Alex",
   "displayTimeZone": "America/New_York",
   "fiscalYear": {
@@ -1994,8 +1994,37 @@
       ]
     },
     {
+      "date": "2026-11-02",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-11-02",
+          "title": "Office",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "8bce5131-ad88-4aeb-a9e8-3243890775e4",
+          "category": "office"
+        }
+      ]
+    },
+    {
       "date": "2026-11-03",
       "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-11-03",
+          "title": "Office",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "745f8caf-858e-4f74-a5f7-2e46a7cf8c03",
+          "category": "office"
+        },
         {
           "calendar": "qgenda",
           "date": "2026-11-03",
@@ -2006,6 +2035,81 @@
           "startTime": "1200",
           "endTime": "1300",
           "uid": "02fb9a40-ab13-4902-8120-263b2a18374e",
+          "category": "conference"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-04",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-11-04",
+          "title": "Office",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "9b5f5b78-f9d5-4060-b916-deec3c91e535",
+          "category": "office"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-11-04",
+          "title": "Jeopardy",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "81001481-65ae-48d3-b7c1-86c81fce2826",
+          "category": "call"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-05",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-11-05",
+          "title": "Office",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "db9dc536-158d-4cc8-acf3-d62d55cc1f27",
+          "category": "office"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-06",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-11-06",
+          "title": "Fluoro",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "0730",
+          "endTime": "1700",
+          "uid": "7451fb36-e727-459e-83db-efca11bad571",
+          "category": "clinical"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-11-06",
+          "title": "Tuberous Sclerosis Conf",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1400",
+          "endTime": "1500",
+          "uid": "4df1a43c-b5a5-404a-9aa0-c9cf4d8328ab",
           "category": "conference"
         }
       ]
