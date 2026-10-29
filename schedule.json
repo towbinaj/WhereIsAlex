@@ -1,5 +1,5 @@
 {
-  "_generatedAt": "2026-10-24T18:42:11.360Z",
+  "_generatedAt": "2026-10-29T20:59:13.418Z",
   "person": "Alex",
   "displayTimeZone": "America/New_York",
   "fiscalYear": {
@@ -2132,8 +2132,37 @@
       ]
     },
     {
+      "date": "2026-11-09",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-11-09",
+          "title": "Trunk 2",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1000",
+          "endTime": "1800",
+          "uid": "946068b7-30cd-486f-b786-6a1b69fc7ab1",
+          "category": "clinical"
+        }
+      ]
+    },
+    {
       "date": "2026-11-10",
       "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-11-10",
+          "title": "Office",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "8942a694-5364-4312-a9ba-f48086a36ad1",
+          "category": "office"
+        },
         {
           "calendar": "qgenda",
           "date": "2026-11-10",
@@ -2162,6 +2191,23 @@
           "endTime": "2200",
           "uid": "601bc00c-acd7-4513-a92b-1351753a765d",
           "category": "call"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-12",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-11-12",
+          "title": "Office",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "985273d8-9d17-4579-8d69-4b22fac85efb",
+          "category": "office"
         }
       ]
     },
