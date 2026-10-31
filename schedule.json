@@ -1,5 +1,5 @@
 {
-  "_generatedAt": "2026-10-30T20:37:43.407Z",
+  "_generatedAt": "2026-10-31T10:16:58.481Z",
   "person": "Alex",
   "displayTimeZone": "America/New_York",
   "fiscalYear": {
@@ -1989,6 +1989,47 @@
           "startTime": "1500",
           "endTime": "2200",
           "uid": "73f0e6a2-1433-49fc-8eb3-30878100ecf3",
+          "category": "call"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-01",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-11-01",
+          "title": "WE/HOL Beeper",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "0700",
+          "endTime": "1430",
+          "uid": "5cbfc544-c4e5-4db2-88d7-9524e23229ab",
+          "category": "call"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-11-01",
+          "title": "Weekend/Holiday Late",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "1430",
+          "endTime": "2200",
+          "uid": "a2fd9f77-9a69-422e-ba16-3004534698d2",
+          "category": "call"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-11-01",
+          "title": "Overnight Beeper",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "2200",
+          "endTime": null,
+          "uid": "d8eec6f0-8808-41c3-9fb7-3c077910f591",
           "category": "call"
         }
       ]
