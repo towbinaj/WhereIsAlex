@@ -1,5 +1,5 @@
 {
-  "_generatedAt": "2026-11-02T12:12:12.472Z",
+  "_generatedAt": "2026-11-02T23:23:40.310Z",
   "person": "Alex",
   "displayTimeZone": "America/New_York",
   "fiscalYear": {
@@ -3095,30 +3095,6 @@
     {
       "date": "2027-02-07",
       "assignments": [
-        {
-          "calendar": "qgenda",
-          "date": "2027-02-07",
-          "title": "WE/HOL Beeper",
-          "location": "",
-          "notes": "",
-          "allDay": false,
-          "startTime": "0700",
-          "endTime": "1430",
-          "uid": "4f40dd13-4455-4e05-ad6c-453ba193e8c0",
-          "category": "call"
-        },
-        {
-          "calendar": "qgenda",
-          "date": "2027-02-07",
-          "title": "Weekend/Holiday Late",
-          "location": "",
-          "notes": "",
-          "allDay": false,
-          "startTime": "1430",
-          "endTime": "2200",
-          "uid": "d6c5f1ed-1e31-4086-988f-25ed3f8b52db",
-          "category": "call"
-        },
         {
           "calendar": "qgenda",
           "date": "2027-02-07",
