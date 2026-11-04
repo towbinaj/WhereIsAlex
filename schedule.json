@@ -1,5 +1,5 @@
 {
-  "_generatedAt": "2026-11-03T21:39:02.440Z",
+  "_generatedAt": "2026-11-04T21:47:01.877Z",
   "person": "Alex",
   "displayTimeZone": "America/New_York",
   "fiscalYear": {
@@ -2585,8 +2585,122 @@
       ]
     },
     {
+      "date": "2026-12-07",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-12-07",
+          "title": "Trunk 1",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "0700",
+          "endTime": "1500",
+          "uid": "544cb0a6-c8cc-4e6f-b040-a59110280d79",
+          "category": "clinical"
+        }
+      ]
+    },
+    {
+      "date": "2026-12-08",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-12-08",
+          "title": "Office",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "e6bb37f6-007e-490f-b11c-63bcf9b4b7c9",
+          "category": "office"
+        }
+      ]
+    },
+    {
+      "date": "2026-12-09",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-12-09",
+          "title": "Office",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "383fbca9-7143-45b0-83ca-20fc495fb75c",
+          "category": "office"
+        }
+      ]
+    },
+    {
+      "date": "2026-12-10",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-12-10",
+          "title": "Office",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "57c63e7f-90e0-41c8-9868-bcde1d9234c3",
+          "category": "office"
+        }
+      ]
+    },
+    {
+      "date": "2026-12-11",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-12-11",
+          "title": "Office",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "aa827f43-6703-447f-9210-bafcac183eed",
+          "category": "office"
+        }
+      ]
+    },
+    {
+      "date": "2026-12-14",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-12-14",
+          "title": "Ultrasound",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "0745",
+          "endTime": "1700",
+          "uid": "f8b36732-893b-4bea-80cd-782813249adf",
+          "category": "clinical"
+        }
+      ]
+    },
+    {
       "date": "2026-12-15",
       "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-12-15",
+          "title": "Office",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "57b4f64d-cf52-4780-87f5-996e5c0b8669",
+          "category": "office"
+        },
         {
           "calendar": "qgenda",
           "date": "2026-12-15",
@@ -2598,6 +2712,69 @@
           "endTime": "1300",
           "uid": "bf4cb3cb-8d63-4644-94d1-1da446952de3",
           "category": "conference"
+        }
+      ]
+    },
+    {
+      "date": "2026-12-16",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-12-16",
+          "title": "Office",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "d8bf3d76-709a-427b-9b42-20f1af1c1d0f",
+          "category": "office"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-12-16",
+          "title": "Jeopardy",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "1dd9c8dd-74f1-48cd-8557-b6aa68e5f2ac",
+          "category": "call"
+        }
+      ]
+    },
+    {
+      "date": "2026-12-17",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-12-17",
+          "title": "Office",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "bb7bfb09-c49b-49da-84b7-3f9002954f1f",
+          "category": "office"
+        }
+      ]
+    },
+    {
+      "date": "2026-12-18",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-12-18",
+          "title": "Liberty",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "0745",
+          "endTime": "1700",
+          "uid": "eab573d8-ea54-4b3e-94b9-b89baf53c99c",
+          "category": "clinical"
         }
       ]
     },
