@@ -1,5 +1,5 @@
 {
-  "_generatedAt": "2026-11-13T21:52:51.332Z",
+  "_generatedAt": "2026-11-14T11:19:59.702Z",
   "person": "Alex",
   "displayTimeZone": "America/New_York",
   "fiscalYear": {
@@ -3071,6 +3071,18 @@
         {
           "calendar": "qgenda",
           "date": "2026-12-28",
+          "title": "Ultrasound",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "0745",
+          "endTime": "1700",
+          "uid": "e10ef411-d831-4fec-b858-f06f099663ce",
+          "category": "clinical"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-12-28",
           "title": "QUIRI Conf",
           "location": "",
           "notes": "Pancreas Tumors",
@@ -3088,6 +3100,18 @@
         {
           "calendar": "qgenda",
           "date": "2026-12-29",
+          "title": "Office",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "5cb0612d-0fa4-48e5-8888-f2748224fb49",
+          "category": "office"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-12-29",
           "title": "Solid Tumor Board",
           "location": "",
           "notes": "",
@@ -3096,6 +3120,52 @@
           "endTime": "1300",
           "uid": "dd338f5b-a0ea-4a7a-bfa5-e76da5db7100",
           "category": "conference"
+        }
+      ]
+    },
+    {
+      "date": "2026-12-30",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-12-30",
+          "title": "Office",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "255ba111-ca16-4345-91cd-f022866271c4",
+          "category": "office"
+        }
+      ]
+    },
+    {
+      "date": "2026-12-31",
+      "assignments": [
+        {
+          "calendar": "qgenda",
+          "date": "2026-12-31",
+          "title": "Office",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "afbe3619-9127-4fd5-ad9e-9fe58e5117dd",
+          "category": "office"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-12-31",
+          "title": "Jeopardy",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "db163bcd-c773-4f5a-82ae-5d88010307ff",
+          "category": "call"
         }
       ]
     },
