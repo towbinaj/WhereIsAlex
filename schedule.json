@@ -1,5 +1,5 @@
 {
-  "_generatedAt": "2026-11-14T11:19:59.702Z",
+  "_generatedAt": "2026-11-15T11:51:47.762Z",
   "person": "Alex",
   "displayTimeZone": "America/New_York",
   "fiscalYear": {
@@ -1519,18 +1519,6 @@
         {
           "calendar": "qgenda",
           "date": "2026-09-30",
-          "title": "Office",
-          "location": "",
-          "notes": "",
-          "allDay": true,
-          "startTime": null,
-          "endTime": null,
-          "uid": "67675ff6-7441-484b-91f8-32648a18a562",
-          "category": "office"
-        },
-        {
-          "calendar": "qgenda",
-          "date": "2026-09-30",
           "title": "Jeopardy",
           "location": "",
           "notes": "",
@@ -1539,6 +1527,18 @@
           "endTime": null,
           "uid": "9bfaf4bb-79bd-41dc-9bdb-0d300ebc9e7e",
           "category": "call"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-09-30",
+          "title": "Office",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "67675ff6-7441-484b-91f8-32648a18a562",
+          "category": "office"
         }
       ]
     },
@@ -2086,18 +2086,6 @@
         {
           "calendar": "qgenda",
           "date": "2026-11-04",
-          "title": "Office",
-          "location": "",
-          "notes": "",
-          "allDay": true,
-          "startTime": null,
-          "endTime": null,
-          "uid": "9b5f5b78-f9d5-4060-b916-deec3c91e535",
-          "category": "office"
-        },
-        {
-          "calendar": "qgenda",
-          "date": "2026-11-04",
           "title": "Jeopardy",
           "location": "",
           "notes": "",
@@ -2106,6 +2094,18 @@
           "endTime": null,
           "uid": "81001481-65ae-48d3-b7c1-86c81fce2826",
           "category": "call"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-11-04",
+          "title": "Office",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "9b5f5b78-f9d5-4060-b916-deec3c91e535",
+          "category": "office"
         }
       ]
     },
@@ -2830,18 +2830,6 @@
         {
           "calendar": "qgenda",
           "date": "2026-12-23",
-          "title": "Office",
-          "location": "",
-          "notes": "",
-          "allDay": true,
-          "startTime": null,
-          "endTime": null,
-          "uid": "5f654a93-de39-44f2-be8a-7acde8e1173f",
-          "category": "office"
-        },
-        {
-          "calendar": "qgenda",
-          "date": "2026-12-23",
           "title": "Jeopardy",
           "location": "",
           "notes": "",
@@ -2850,24 +2838,24 @@
           "endTime": null,
           "uid": "a76361d7-b8fa-48a9-9ae0-6c9030fd9038",
           "category": "call"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-12-23",
+          "title": "Office",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "5f654a93-de39-44f2-be8a-7acde8e1173f",
+          "category": "office"
         }
       ]
     },
     {
       "date": "2026-12-24",
       "assignments": [
-        {
-          "calendar": "qgenda",
-          "date": "2026-12-24",
-          "title": "Observed Holiday",
-          "location": "",
-          "notes": "",
-          "allDay": true,
-          "startTime": null,
-          "endTime": null,
-          "uid": "216b959e-4310-4fff-9403-cf87fb2b287d",
-          "category": "away"
-        },
         {
           "calendar": "qgenda",
           "date": "2026-12-24",
@@ -2879,6 +2867,18 @@
           "endTime": null,
           "uid": "ef8a4fc4-7e3f-4c6b-9344-2218ae1c9637",
           "category": "call"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-12-24",
+          "title": "Observed Holiday",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "216b959e-4310-4fff-9403-cf87fb2b287d",
+          "category": "away"
         },
         {
           "calendar": "qgenda",
@@ -2924,18 +2924,6 @@
         {
           "calendar": "qgenda",
           "date": "2026-12-25",
-          "title": "Holiday Early",
-          "location": "",
-          "notes": "",
-          "allDay": true,
-          "startTime": null,
-          "endTime": null,
-          "uid": "57a9806c-a3dd-4821-be12-65843ef4f74c",
-          "category": "call"
-        },
-        {
-          "calendar": "qgenda",
-          "date": "2026-12-25",
           "title": "Observed Holiday",
           "location": "",
           "notes": "",
@@ -2944,6 +2932,18 @@
           "endTime": null,
           "uid": "e772e239-36df-41cf-87fd-044dc4987f17",
           "category": "away"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-12-25",
+          "title": "Holiday Early",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "57a9806c-a3dd-4821-be12-65843ef4f74c",
+          "category": "call"
         },
         {
           "calendar": "qgenda",
@@ -2989,18 +2989,6 @@
         {
           "calendar": "qgenda",
           "date": "2026-12-26",
-          "title": "Weekend/Holiday Early",
-          "location": "",
-          "notes": "",
-          "allDay": false,
-          "startTime": "0700",
-          "endTime": "1430",
-          "uid": "a4fe382a-9d3d-4773-9387-e39f5dcc1078",
-          "category": "call"
-        },
-        {
-          "calendar": "qgenda",
-          "date": "2026-12-26",
           "title": "WE/HOL Beeper",
           "location": "",
           "notes": "fluoro backup for JD ML pay 230p-10",
@@ -3008,6 +2996,18 @@
           "startTime": "0700",
           "endTime": "2200",
           "uid": "956e9377-6640-43bf-b264-be8fd593564a",
+          "category": "call"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-12-26",
+          "title": "Weekend/Holiday Early",
+          "location": "",
+          "notes": "",
+          "allDay": false,
+          "startTime": "0700",
+          "endTime": "1430",
+          "uid": "a4fe382a-9d3d-4773-9387-e39f5dcc1078",
           "category": "call"
         },
         {
@@ -3146,18 +3146,6 @@
         {
           "calendar": "qgenda",
           "date": "2026-12-31",
-          "title": "Office",
-          "location": "",
-          "notes": "",
-          "allDay": true,
-          "startTime": null,
-          "endTime": null,
-          "uid": "afbe3619-9127-4fd5-ad9e-9fe58e5117dd",
-          "category": "office"
-        },
-        {
-          "calendar": "qgenda",
-          "date": "2026-12-31",
           "title": "Jeopardy",
           "location": "",
           "notes": "",
@@ -3166,6 +3154,18 @@
           "endTime": null,
           "uid": "db163bcd-c773-4f5a-82ae-5d88010307ff",
           "category": "call"
+        },
+        {
+          "calendar": "qgenda",
+          "date": "2026-12-31",
+          "title": "Office",
+          "location": "",
+          "notes": "",
+          "allDay": true,
+          "startTime": null,
+          "endTime": null,
+          "uid": "afbe3619-9127-4fd5-ad9e-9fe58e5117dd",
+          "category": "office"
         }
       ]
     },
